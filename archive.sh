@@ -56,7 +56,7 @@ cmd="wget \
   --execute robots=off \
   --directory-prefix=. \
   --span-hosts \
-  --domains=${DOMAIN}
+  --domains=${DOMAIN} \
   --random-wait \
   ${1}"
 eval $cmd
