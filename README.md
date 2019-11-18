@@ -10,6 +10,4 @@ Run the `archive.sh` to generate the web archive.
 
 This creates a web archive, including the [warc](https://iipc.github.io/warc-specifications/specifications/warc-format/warc-1.1/) files.
 
-
-## Validating
-
+This creates an archive at `forum2017.diglib.org`. Rename this to `docs`. GitHub has an option in the repository that allows you to set the [Pages](https://help.github.com/en/github/working-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site) to point to this directory to serve data.
