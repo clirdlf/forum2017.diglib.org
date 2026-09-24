@@ -1,0 +1,244 @@
+{
+  "counts": {
+    "exhibitor": 14,
+    "page": 31,
+    "post": 16,
+    "poi": 12,
+    "session": 16,
+    "sponsor": 29,
+    "speaker": 3,
+    "ticket": 3
+  },
+  "issues": [
+    {
+      "url": "/performers/",
+      "kind": "missing-entity",
+      "detail": "13"
+    },
+    {
+      "url": "/performers/",
+      "kind": "missing-entity",
+      "detail": "92"
+    },
+    {
+      "url": "/performers/",
+      "kind": "missing-entity",
+      "detail": "93"
+    },
+    {
+      "url": "/performers/",
+      "kind": "missing-entity",
+      "detail": "94"
+    },
+    {
+      "url": "/performers/",
+      "kind": "missing-entity",
+      "detail": "149"
+    },
+    {
+      "url": "/performers/",
+      "kind": "missing-entity",
+      "detail": "150"
+    },
+    {
+      "url": "/performers/",
+      "kind": "missing-entity",
+      "detail": "151"
+    },
+    {
+      "url": "/performers/",
+      "kind": "missing-entity",
+      "detail": "152"
+    },
+    {
+      "url": "/schedule/",
+      "kind": "external-service",
+      "detail": "Sched embed requires dlfforum2017.sched.com"
+    },
+    {
+      "url": "/cart/",
+      "kind": "retired-interaction",
+      "detail": "woocommerce_cart"
+    },
+    {
+      "url": "/checkout/",
+      "kind": "retired-interaction",
+      "detail": "woocommerce_checkout"
+    },
+    {
+      "url": "/my-account/",
+      "kind": "retired-interaction",
+      "detail": "woocommerce_my_account"
+    },
+    {
+      "url": "/",
+      "kind": "external-service",
+      "detail": "Sched embed requires dlfforum2017.sched.com"
+    },
+    {
+      "url": "/",
+      "kind": "simplified-section",
+      "detail": "Map replaced with links to exported venue records"
+    },
+    {
+      "url": "/",
+      "kind": "needs-review",
+      "detail": "newsletter depends on theme options or retired interaction"
+    },
+    {
+      "url": "/",
+      "kind": "needs-review",
+      "detail": "social depends on theme options or retired interaction"
+    },
+    {
+      "url": "/about/",
+      "kind": "needs-review",
+      "detail": "social depends on theme options or retired interaction"
+    },
+    {
+      "url": "/hotel-and-travel/",
+      "kind": "simplified-section",
+      "detail": "Map replaced with links to exported venue records"
+    },
+    {
+      "url": "/lac-hbcu/",
+      "kind": "needs-review",
+      "detail": "timer depends on theme options or retired interaction"
+    },
+    {
+      "url": "/lac-hbcu/",
+      "kind": "needs-review",
+      "detail": "twitter-wrap depends on theme options or retired interaction"
+    },
+    {
+      "url": "/ndsas-digital-preservation/",
+      "kind": "needs-review",
+      "detail": "twitter-wrap depends on theme options or retired interaction"
+    },
+    {
+      "url": "/floor-plans/",
+      "kind": "empty-content",
+      "detail": "Floor Plans"
+    },
+    {
+      "url": "/registration/",
+      "kind": "needs-review",
+      "detail": "followus depends on theme options or retired interaction"
+    },
+    {
+      "url": "/hotel-and-travel/visitors-guide/",
+      "kind": "simplified-section",
+      "detail": "Map replaced with links to exported venue records"
+    },
+    {
+      "url": "/sessions/how-mobile-is-your-business/",
+      "kind": "needs-review",
+      "detail": "Exported session metadata may include theme demo content; not treated as the Sched program"
+    },
+    {
+      "url": "/sessions/growing-in-social-business/",
+      "kind": "needs-review",
+      "detail": "Exported session metadata may include theme demo content; not treated as the Sched program"
+    },
+    {
+      "url": "/sessions/the-rules-of-angel-investment/",
+      "kind": "needs-review",
+      "detail": "Exported session metadata may include theme demo content; not treated as the Sched program"
+    },
+    {
+      "url": "/sessions/equal-opportunities-in-the-workplace/",
+      "kind": "needs-review",
+      "detail": "Exported session metadata may include theme demo content; not treated as the Sched program"
+    },
+    {
+      "url": "/sessions/discover-a-worldwide-market-from-your-home-office-6/",
+      "kind": "needs-review",
+      "detail": "Exported session metadata may include theme demo content; not treated as the Sched program"
+    },
+    {
+      "url": "/sessions/case-study-how-i-set-up-my-own-business/",
+      "kind": "needs-review",
+      "detail": "Exported session metadata may include theme demo content; not treated as the Sched program"
+    },
+    {
+      "url": "/sessions/best-places-to-work-strategies/",
+      "kind": "needs-review",
+      "detail": "Exported session metadata may include theme demo content; not treated as the Sched program"
+    },
+    {
+      "url": "/sessions/a-worldwide-market/",
+      "kind": "needs-review",
+      "detail": "Exported session metadata may include theme demo content; not treated as the Sched program"
+    },
+    {
+      "url": "/sessions/ut-arcu-risus-proin-hac-parturient-vel/",
+      "kind": "needs-review",
+      "detail": "Exported session metadata may include theme demo content; not treated as the Sched program"
+    },
+    {
+      "url": "/sponsor/de-gruyter/",
+      "kind": "empty-content",
+      "detail": "De Gruyter"
+    },
+    {
+      "url": "/sponsor/arkivum/",
+      "kind": "empty-content",
+      "detail": "Arkivum"
+    },
+    {
+      "url": "/sessions/adipiscing-tempor-augue-urna-proin-proin-scelerisque/",
+      "kind": "needs-review",
+      "detail": "Exported session metadata may include theme demo content; not treated as the Sched program"
+    },
+    {
+      "url": "/sessions/egestas-cursus-placerat-magna-diam-sed-risus/",
+      "kind": "needs-review",
+      "detail": "Exported session metadata may include theme demo content; not treated as the Sched program"
+    },
+    {
+      "url": "/sessions/pulvinar-risus-vel-proin-nisi-integer-turpis/",
+      "kind": "needs-review",
+      "detail": "Exported session metadata may include theme demo content; not treated as the Sched program"
+    },
+    {
+      "url": "/sessions/sit-massa-nunc-a-vel-proin-sit/",
+      "kind": "needs-review",
+      "detail": "Exported session metadata may include theme demo content; not treated as the Sched program"
+    },
+    {
+      "url": "/sessions/lectus-placerat-magna-non-natoque-eu-natoque/",
+      "kind": "needs-review",
+      "detail": "Exported session metadata may include theme demo content; not treated as the Sched program"
+    },
+    {
+      "url": "/sessions/platea-egestas-odio-placerat-nunc-mauris-pid/",
+      "kind": "needs-review",
+      "detail": "Exported session metadata may include theme demo content; not treated as the Sched program"
+    },
+    {
+      "url": "/sessions/est-aenean-lundium-amet-ultrices-ut-et/",
+      "kind": "needs-review",
+      "detail": "Exported session metadata may include theme demo content; not treated as the Sched program"
+    },
+    {
+      "url": "/sponsor/carnegie-mellon-university-libraries/",
+      "kind": "empty-content",
+      "detail": "Carnegie Mellon University Libraries"
+    },
+    {
+      "url": "/ticket/sold-out-ticket/",
+      "kind": "needs-review",
+      "detail": "Exported ticket may be theme demo content; no purchase interaction generated"
+    },
+    {
+      "url": "/ticket/featured-ticket/",
+      "kind": "needs-review",
+      "detail": "Exported ticket may be theme demo content; no purchase interaction generated"
+    },
+    {
+      "url": "/ticket/regular-ticket/",
+      "kind": "needs-review",
+      "detail": "Exported ticket may be theme demo content; no purchase interaction generated"
+    }
+  ]
+}

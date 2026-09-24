@@ -1,0 +1,157 @@
+
+.samplepage{
+    color: #ffffff;
+}
+.samplepage p{
+    color: #ffffff;
+    margin: 20px 0;
+}
+.samplepage ul{
+    list-style-type: disc;
+    margin-left: 18px;
+}
+.samplepage ol{
+    list-style-type: decimal;
+    margin-left: 18px;
+}
+.samplepage iframe{
+    border:0;
+}
+/* WOOCOMMERCE */
+.samplepage .products {width:100%; margin: 20px 0 20px 0;font-size: 26px;color: #fff;}
+.samplepage .woocommerce .products th{font-size: 18px;}
+.samplepage .woocommerce .products th.quantity-th, .registration .woocommerce .products th.price-th {text-align: center;}
+.samplepage .woocommerce .products tr.product:first-child {border-top: 1px solid #ccc;}
+.samplepage .woocommerce .products tr.product{border-bottom: 1px solid #cccccc;}
+.samplepage .woocommerce .products td {padding: 5px;}
+.samplepage .woocommerce .qty {border: 1px solid #cccccc;width: 40px;padding: 5px; vertical-align: middle;}
+.samplepage .woocommerce .description {text-align: left;}
+.samplepage .woocommerce .title{width: 15%;text-align: left;}
+.samplepage .woocommerce .title h3 {  font-size: 18px !important;display: inline;font-weight: bold;}
+.samplepage .woocommerce form.cart {display: inline-block;}
+.samplepage .woocommerce tr .btn {padding: 5px 15px;}
+.samplepage .add_to_cart_loop {width: auto; padding: 0 20px;}
+.samplepage .woocommerce .short-description {display: inline;vertical-align: -webkit-baseline-middle;vertical-align: middle;font-size: 20px;}
+.samplepage .woocommerce .price {font-size: 18px;font-weight: bold;}
+.samplepage .woocommerce .cart .product-thumbnail img {width: 180px;}
+.samplepage .gform_wrapper .gfield_radio li label{font-size: 15px;}
+.samplepage .gform_wrapper ul.gform_fields li.gfield input[type=radio]{-webkit-appearance: radio !important; margin:1px;}
+.samplepage .btn.btn-black:hover{background-color: #000000 !important;color:#ffffff;}
+.samplepage .btn.btn-green {background-color: #83febf;}
+.samplepage.embedded-editor, .samplepage.embedded-editor p{color:#000000;}
+.samplepage.embedded-editor .content .col-md-6{
+    float: left;
+    width: 50%;
+}
+.samplepage.embedded-editor .content .col-md-4{
+    float: left;
+    width: 33.33333333%;
+}
+.samplepage.embedded-editor .content .col-md-3{
+    float: left;
+    width: 25%;
+}
+.samplepage.embedded-editor .content.row{
+    width: 100%;
+}
+
+.samplepage.embedded-editor .btn{
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    overflow: hidden;
+    width: 132px;
+    height: 38px;
+    padding: 11px 10px;
+    font-size: 14px;
+    line-height: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: #000;
+    border: 2px solid #ffdc1a;
+    background: #ffdc1a;
+    -webkit-transition: border 0.3s, height 0.3s, opacity 0.3s, color 0.3s, background 0.3s;
+    transition: border 0.3s, height 0.3s, opacity 0.3s, color 0.3s, background 0.3s;
+    text-decoration: none;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.samplepage.embedded-editor .btn:hover{
+    background: #ffe348;
+    border-color: #ffe348;
+}
+.samplepage.embedded-editor .btn.btn_1 {
+    width: 231px;
+    height: 54px;
+    padding: 17px 10px;
+    font-size: 18px;
+    line-height: 18px;
+}
+.samplepage.embedded-editor .btn.btn_3 {
+    width: 230px;
+    height: 54px;
+    padding: 18px 10px;
+    font-size: 18px;
+    line-height: 1;
+    background: #2b2b2b;
+    border: none;
+    font-weight: 500;
+    color: #fff;
+}
+
+.samplepage.embedded-editor .btn_3:hover {
+    background: #3c3c3c;
+}
+.samplepage.embedded-editor .btn.btn_9 {
+    width: auto;
+    height: 52px;
+    padding: 16px 10px;
+    display: block;
+    font-size: 18px;
+}
+.samplepage.embedded-editor .btn.btn_5{
+    display: inline-block;
+    width: 228px;
+    height: 54px;
+    padding: 20px 10px;
+    font-size: 18px;
+    margin: 0 16px;
+    border: none;
+    background: #ffee8d;
+}
+.samplepage.embedded-editor .btn.btn_5:hover{
+    background: #fffadd;
+}
+
+.samplepage.embedded-editor h1,
+.samplepage.embedded-editor h2,
+.samplepage.embedded-editor h3,
+.samplepage.embedded-editor h4,
+.samplepage.embedded-editor h5 {
+    font-size: 36px;
+    line-height: 42px;
+    margin-bottom: 20px;
+    font-family: 'Roboto Slab', sans-serif;
+}
+.samplepage.embedded-editor h2{
+    font-size: 30px;
+    line-height: 36px;
+}
+.samplepage.embedded-editor h3{
+    font-size: 24px;
+    line-height: 30px;
+}
+.samplepage.embedded-editor h4{
+    font-size: 20px;
+    line-height: 26px;
+}
+.samplepage.embedded-editor h5{
+    font-size: 16px;
+    line-height: 22px;
+}
+.samplepage.embedded-editor h6 {
+    font-size: 12px;
+    line-height: 18px;
+}

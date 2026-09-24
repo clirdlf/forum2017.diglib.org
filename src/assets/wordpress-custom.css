@@ -1,0 +1,41 @@
+.home .speakers .speakers__layout {
+	text-align: center;
+}
+
+.site__header-top {
+  background: rgba(0,0,0,0.09);	
+}
+.speakers .speakers__layout {
+	text-align: center;
+}
+
+.speakers .btn {
+	display: none;
+}
+
+.single-speaker .speaker-profile .schedule .site__centered {
+	display: none;
+}
+
+h2.site__title.site__title_white,
+.time-schedule__place, .time-schedule__save > div> a {
+    background: #0067A1;
+}
+
+h2.site__title.site__title_white, .time-schedule__place {
+    padding:15px;
+}
+
+.scroll-to-top {
+	position: fixed;
+	background-image: url('http://ndsa.diglib.org/images/scroll-to-top.png');
+	background-repeat: no-repeat;
+	cursor: pointer;
+	bottom: 2em;
+	height: 55px;
+	right: 15px;
+	width: 55px;
+	padding-right: 1em;
+	/*display:none;*/
+	z-index: 999;
+}

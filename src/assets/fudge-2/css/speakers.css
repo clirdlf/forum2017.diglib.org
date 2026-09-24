@@ -1,0 +1,69 @@
+@charset "utf-8";
+
+/*
+    main styles
+    version: 15.02.2016
+
+    site
+
+    hero
+
+    speakers
+
+*/
+
+/* --------------- hero --------------- */
+.hero_speakers{
+    height: 373px;
+    padding: 0 20px;
+}
+.hero__layout.hero__layout_profile {
+    display: block;
+}
+/* --------------- /hero --------------- */
+
+/* ------------ speakers ------------ */
+.speakers_page {
+    background: #f3f3f3;
+}
+/* ------------ /speakers ------------ */
+
+@media (min-width: 768px) {
+
+    /* --------------- site --------------- */
+    .site__title_big{
+        margin-bottom: 19px;
+        padding: 0 0 23px;
+        font-size: 49px;
+    }
+    .site__title:after{
+        border-radius: 10px;
+    }
+    /* --------------- /site --------------- */
+
+    /* --------------- hero --------------- */
+    .hero_speakers{
+        /*height: 599px;*/
+        padding-top: 87px;
+    }
+    .hero_speakers p{
+        font-size: 20px;
+        line-height: 38px;
+    }
+    /* --------------- /hero --------------- */
+
+}
+
+@media (min-width: 1000px) {
+
+    /* --------------- hero --------------- */
+    .hero_speakers{
+        padding-top: 43px;
+    }
+    .hero_speakers p{
+        width: 650px;
+        margin: 0 auto;
+    }
+    /* --------------- /hero --------------- */
+
+}
