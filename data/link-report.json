@@ -1,5 +1,11 @@
 {
+  "pageCount": 124,
+  "emptyBuild": false,
+  "missingRoutes": [],
+  "unexpectedRoutes": [],
   "missingLocalReferences": {},
+  "missingFragments": {},
+  "accessibilityAndArchiveIssues": {},
   "unrenderedShortcodePages": [],
   "publishedPHP": []
 }

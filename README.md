@@ -28,12 +28,15 @@ Generated output is stored in `src/_data/wordpress.json`. Do not edit it directl
 
 ## Static adaptations
 
-- Removed both accessibility plugins' assets, toolbar markup, and styles. Ordinary HTML accessibility remains.
-- Removed analytics, WordPress/plugin runtime scripts, forms, and unused API-discovery links. Small local JavaScript handles the navigation and scrolled header.
+- Removed both accessibility plugins' assets, toolbar markup, and styles. Captured pages receive a main landmark, skip link, labeled navigation/social links, and alternatives for decorative images.
+- Removed analytics, WordPress/plugin runtime scripts, forms, and unused API-discovery links. Small local JavaScript handles the responsive navigation; the header stays in normal document flow below the archive notice.
 - Preserved Sched's HTTPS embed and added a direct schedule link. The preview rendered the theme correctly, but the remote schedule iframe did not finish loading during verification. Sched and Google Fonts remain external dependencies.
 - Decoded public Cloudflare email-protection links locally.
 - Preserved local upload paths and corrected malformed internal Twitter/IMLS and visitor-guide links.
-- Interactive maps, dynamic pagination, forms, and other server-backed behaviors are not recreated. Their surrounding original markup may remain; these need a separate functionality pass before publication.
+- A shared archive notice identifies historical deadlines and closed event services on every route.
+- Empty map widgets become static venue information and a map link. Dead hash-only pagination links and empty newsletter sections are removed at import time. Original historical content is retained.
+- Mobile navigation works without JavaScript; when JavaScript is available, it supports expanded state, Escape to close and restore focus, and excludes collapsed links from keyboard navigation.
+- `scripts/archive_html.py` owns these adaptations; the notice is shared with fallback pages through `src/_includes/archive-notice.html`.
 
 ## Assets and deployment
 
@@ -43,10 +46,13 @@ URLs target the domain root, preferably `forum2017.diglib.org`. A GitHub project
 
 ## Validation
 
-`npm run check` audits generated HTML links, images/srcset, remaining supported shortcode syntax, and PHP output. It does not fetch external links or check CSS URLs or fragments. Reports:
+Run `npm run validate` for regression fixtures, the build, and the generated-site audit. GitHub Actions runs the same command on pushes and pull requests. `npm run check` alone checks the existing `_site` output. `data/public-routes.json` is the committed preservation baseline; update it deliberately only when the published route set changes.
+
+
+`npm run check` audits generated HTML links, images/srcset, remaining supported shortcode syntax, and PHP output. It also checks local fragments, referenced CSS assets, the independent route manifest, and basic archive/accessibility markup. Missing assets, an empty/incomplete build, unexpected routes, or any reported issue fail the command. It does not fetch external links or certify WCAG conformance. Reports:
 
 - `data/rendered-report.json`: captured page count and fallback routes.
 - `data/link-report.json`: generated HTML audit.
 - `data/migration-report.json`: original WXR import findings; many simplified-section entries are superseded by the rendered captures.
 
-The desktop homepage hero, colors, logo/navigation, feature panels, and speaker cards were visually checked in Chrome. Broader responsive and interactive-feature review remains before publication.
+The desktop homepage hero, colors, logo/navigation, feature panels, and speaker cards were visually checked in Chrome. The archive notice and mobile menu were also reviewed at a 390px viewport. Broader assistive-technology, contrast, and page-by-page responsive review remains before publication.

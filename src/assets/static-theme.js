@@ -1,13 +1,27 @@
-// Small local replacements for theme interactions that previously required WordPress AJAX.
-document.querySelectorAll('.menu-btn').forEach(button => {
-  button.setAttribute('aria-label','Toggle navigation');button.setAttribute('aria-expanded','false');
-  button.addEventListener('click',()=>{const menu=document.querySelector('.header-menu');const open=menu.classList.toggle('static-open');button.classList.toggle('active',open);button.setAttribute('aria-expanded',String(open));});
-});
-document.querySelectorAll('a[data-action], .speakers__more, .news__more').forEach(link=>{
-  // Every captured card is already rendered; no PHP pagination endpoint exists.
-  if((link.getAttribute('data-action')||'').includes('.php') || link.getAttribute('href')==='#')link.hidden=true;
-});
-const header=document.querySelector('.site__header');
-function updateHeader(){header?.classList.toggle('fixed',window.scrollY>60);}
-window.addEventListener('scroll',updateHeader,{passive:true});updateHeader();
-document.querySelectorAll('.news__load-more, .where__more').forEach(link=>{if(link.getAttribute('href')==='#')link.hidden=true;});
+// The navigation is expanded by default so every link works without JavaScript.
+const menu = document.querySelector('.header-menu');
+const button = document.querySelector('.menu-btn');
+if (menu && button) {
+  const mobile = window.matchMedia('(max-width: 999px)');
+  function setOpen(open) {
+    menu.classList.toggle('static-open', open);
+    button.classList.toggle('opened', open);
+    button.setAttribute('aria-expanded', String(open));
+    menu.inert = mobile.matches && !open;
+  }
+  function resetMenu() {
+    if (menu.contains(document.activeElement) && mobile.matches) button.focus();
+    setOpen(false);
+  }
+  button.hidden = false;
+  document.documentElement.classList.add('archive-js');
+  button.addEventListener('click', () => setOpen(button.getAttribute('aria-expanded') !== 'true'));
+  document.addEventListener('keydown', event => {
+    if (event.key === 'Escape' && mobile.matches && button.getAttribute('aria-expanded') === 'true') {
+      setOpen(false);
+      button.focus();
+    }
+  });
+  mobile.addEventListener('change', resetMenu);
+  resetMenu();
+}

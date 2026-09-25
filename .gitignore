@@ -5,3 +5,5 @@ data/themes/
 _site/
 
 data/rendered/
+
+__pycache__/

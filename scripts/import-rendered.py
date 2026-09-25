@@ -5,6 +5,7 @@ from pathlib import Path
 from html.parser import HTMLParser
 from urllib.parse import urlsplit
 import html,json,re
+from archive_html import adapt
 ROOT=Path(__file__).resolve().parents[1]
 VOID=set('area base br col embed hr img input link meta param source track wbr'.split())
 class Capture(HTMLParser):
@@ -21,6 +22,7 @@ class Capture(HTMLParser):
         elif drop:return
         if self.suppress:return
         parts=[]
+        if tag=='script' and d.get('id')=='embed-sched-js':parts.append('defer')
         for key,value in attrs:
             if key.startswith('on'):continue
             if value is None:parts.append(key);continue
@@ -34,8 +36,7 @@ class Capture(HTMLParser):
     def handle_endtag(self,tag):
         if tag in VOID:return
         if not self.suppress:
-            if tag=='head':self.out.append('<link rel="stylesheet" href="/assets/static-theme.css">')
-            if tag=='body':self.out.append('<script src="/assets/static-theme.js" defer></script>')
+            if tag=='head':self.out.append('<link rel="stylesheet" href="/assets/static-theme.css"><script src="/assets/static-theme.js" defer></script>')
             self.out.append('</'+tag+'>')
         for n in range(len(self.stack)-1,-1,-1):
             if self.stack[n][0]==tag:
@@ -67,7 +68,14 @@ for page in data['pages']:
     result=result.replace('src="//dlfforum2017.sched.com/', 'src="https://dlfforum2017.sched.com/')
     if 'id="sched-embed"' in result:
         result=result.replace('<a id="sched-embed"', '<p class="schedule-direct"><a href="https://dlfforum2017.sched.com/">Open the full conference schedule</a></p><a id="sched-embed"')
-    page['rendered']=result;count+=1
+    # Repair historical fragment links against their actual content targets.
+    if page['url'] == '/thank-you/':
+        result=result.replace('<h4>2017 Forum Planning Committee Volunteers:', '<h4 id="Forum">2017 Forum Planning Committee Volunteers:')
+    if page['url'] == '/about-fellowships/fellows/':
+        result=result.replace('<h2 class="site__title">HBCU Fellows', '<h2 class="site__title" id="HBCU">HBCU Fellows')
+    if page['url'] == '/about-fellowships/':
+        result=result.replace('<span>With thanks to our fellowship partners:', '<span id="partners">With thanks to our fellowship partners:')
+    page['rendered']=adapt(result);count+=1
 # Noncaptured archive-only routes remain available through the original importer.
 data_path.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n')
 (ROOT/'data/rendered-report.json').write_text(json.dumps({'captured':count,'fallbackRoutes':failed},indent=2)+'\n')

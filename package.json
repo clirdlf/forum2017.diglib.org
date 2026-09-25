@@ -8,7 +8,9 @@
     "build": "eleventy",
     "import:wordpress": "python3 scripts/import-wordpress.py",
     "import:rendered": "python3 scripts/import-rendered.py",
-    "check": "python3 scripts/check-archive.py"
+    "check": "python3 scripts/check-archive.py",
+    "test": "python3 -m unittest discover -s tests",
+    "validate": "npm test && npm run build && npm run check"
   },
   "keywords": [],
   "author": "",

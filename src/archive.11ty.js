@@ -1,3 +1,5 @@
+import {readFileSync} from 'node:fs';
+const archiveNotice = readFileSync(new URL('./_includes/archive-notice.html', import.meta.url), 'utf8');
 const esc = (value = '') => String(value).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 function menu(items = [], parent = '0', seen = new Set()) {
   return '<ul>' + items.filter(i => i.parent === parent && !seen.has(i.id)).map(i => {
@@ -20,11 +22,12 @@ export default class {
 <link rel="stylesheet" href="/assets/fudge-2/css/font-awesome.min.css">
 <link rel="stylesheet" href="/assets/fudge2-child/style.css">
 <link rel="stylesheet" href="/assets/wordpress-custom.css">
-<link rel="stylesheet" href="/assets/archive.css"></head>
-<body class="archive-site"><a class="skip-link" href="#main">Skip to content</a>
+<link rel="stylesheet" href="/assets/archive.css">
+<link rel="stylesheet" href="/assets/static-theme.css"></head>
+<body class="archive-site"><a class="skip-link" href="#main">Skip to content</a>${archiveNotice}
 <header class="archive-header"><a class="archive-brand" href="/">DLF Forum <strong>2017</strong></a>
 <nav aria-label="Main navigation">${menu(wordpress.menus.header)}</nav></header>
-<main id="main">${home ? '' : `<div class="archive-page-heading"><h1>${esc(entry.title)}</h1>${entry.type === 'post' ? `<time datetime="${esc(entry.date.slice(0,10))}">${esc(entry.date.slice(0,10))}</time>` : ''}</div>`}
+<main id="main" tabindex="-1">${home ? '' : `<div class="archive-page-heading"><h1>${esc(entry.title)}</h1>${entry.type === 'post' ? `<time datetime="${esc(entry.date.slice(0,10))}">${esc(entry.date.slice(0,10))}</time>` : ''}</div>`}
 ${entry.type !== 'page' && entry.image ? `<img class="archive-featured" src="${esc(entry.image)}" alt="">` : ''}
 <div class="archive-body ${entry.type === 'page' ? '' : 'archive-prose'}">${entry.body}</div></main>
 <footer class="archive-footer"><p>DLF Forum 2017 · Pittsburgh, Pennsylvania</p><div class="archive-footer-menus">${Object.entries(wordpress.menus).filter(([name]) => name !== 'header').map(([name,items]) => `<nav aria-label="${esc(name)}"><h2>${esc(name)}</h2>${menu(items)}</nav>`).join('')}</div></footer></body></html>`;
