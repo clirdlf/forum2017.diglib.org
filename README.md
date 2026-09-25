@@ -50,9 +50,11 @@ The public Sched calendar and schedule listing are committed in `data/schedule/`
 
 ## Assets and deployment
 
-`src/uploads` publishes at `/wp-content/uploads/sites/15/`. Original frontend theme assets live in `src/assets/fudge-2` and `src/assets/fudge2-child`; PHP source and accessibility plugins are not published. Commit the generated data and required public assets/uploads for repeatable GitHub builds. No deployment is enabled yet.
+`src/uploads` publishes at `/wp-content/uploads/sites/15/`. Original frontend theme assets live in `src/assets/fudge-2` and `src/assets/fudge2-child`; PHP source and accessibility plugins are not published. Commit the generated data and required public assets/uploads for repeatable GitHub builds.
 
-URLs target the domain root, preferably `forum2017.diglib.org`. A GitHub project subpath would need URL-prefix handling.
+The [Deploy to GitHub Pages](.github/workflows/deploy.yml) workflow installs dependencies, tests, builds, and audits the site, then publishes `_site/` to GitHub Pages. It runs on pushes to `master` or manually from the Actions tab. Set **Settings → Pages → Source** to **GitHub Actions**. Deployments use the `github-pages` environment and the built-in GitHub token; no additional secrets are required.
+
+URLs target the domain root, preferably `forum2017.diglib.org`. Keep that custom domain configured in **Settings → Pages**; Actions deployments use the repository's domain setting rather than `docs/CNAME`. A GitHub project subpath would need URL-prefix handling.
 
 ## Image delivery
 
