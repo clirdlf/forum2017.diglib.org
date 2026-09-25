@@ -1,0 +1,1217 @@
+{
+  "uniqueImages": 98,
+  "lazyImages": 45,
+  "duplicatesRemoved": 2,
+  "originalBytes": 19155369,
+  "largestAlternativeBytes": 4041826,
+  "note": "Comparison of unique referenced originals with their largest advertised alternatives; not a measured page transfer size. Original upload URLs remain published.",
+  "images": {
+    "/wp-content/uploads/sites/15/2015/12/Arkivum-Logo-no-strap-black1-392x178.png": {
+      "width": 392,
+      "height": 178,
+      "originalBytes": 10443,
+      "variants": []
+    },
+    "/wp-content/uploads/sites/15/2015/12/rz_dg-degruyter-392x178.jpg": {
+      "width": 392,
+      "height": 178,
+      "originalBytes": 5828,
+      "variants": []
+    },
+    "/wp-content/uploads/sites/15/2016/05/DLF-2016-161-e1501078730243.jpg": {
+      "width": 1601,
+      "height": 1067,
+      "originalBytes": 131605,
+      "variants": [
+        {
+          "width": 480,
+          "bytes": 12632,
+          "url": "/assets/optimized/dc2f00f5a2d0587550fb-480.webp"
+        },
+        {
+          "width": 768,
+          "bytes": 24406,
+          "url": "/assets/optimized/dc2f00f5a2d0587550fb-768.webp"
+        },
+        {
+          "width": 1200,
+          "bytes": 44652,
+          "url": "/assets/optimized/dc2f00f5a2d0587550fb-1200.webp"
+        },
+        {
+          "width": 1601,
+          "bytes": 67948,
+          "url": "/assets/optimized/dc2f00f5a2d0587550fb-1601.webp"
+        }
+      ]
+    },
+    "/wp-content/uploads/sites/15/2017/04/30511369093_42801b3203_k-e1501080649577.jpg": {
+      "width": 1600,
+      "height": 1066,
+      "originalBytes": 239796,
+      "variants": [
+        {
+          "width": 480,
+          "bytes": 25402,
+          "url": "/assets/optimized/da1eb2c6635ae0d044d1-480.webp"
+        },
+        {
+          "width": 768,
+          "bytes": 52570,
+          "url": "/assets/optimized/da1eb2c6635ae0d044d1-768.webp"
+        },
+        {
+          "width": 1200,
+          "bytes": 100402,
+          "url": "/assets/optimized/da1eb2c6635ae0d044d1-1200.webp"
+        },
+        {
+          "width": 1600,
+          "bytes": 151450,
+          "url": "/assets/optimized/da1eb2c6635ae0d044d1-1600.webp"
+        }
+      ]
+    },
+    "/wp-content/uploads/sites/15/2017/04/30950607220_e4feff568b_k.jpg": {
+      "width": 2048,
+      "height": 1365,
+      "originalBytes": 1178898,
+      "variants": [
+        {
+          "width": 480,
+          "bytes": 31414,
+          "url": "/assets/optimized/a92006dc921b97e66067-480.webp"
+        },
+        {
+          "width": 768,
+          "bytes": 72826,
+          "url": "/assets/optimized/a92006dc921b97e66067-768.webp"
+        },
+        {
+          "width": 1200,
+          "bytes": 156594,
+          "url": "/assets/optimized/a92006dc921b97e66067-1200.webp"
+        },
+        {
+          "width": 1920,
+          "bytes": 338758,
+          "url": "/assets/optimized/a92006dc921b97e66067-1920.webp"
+        }
+      ]
+    },
+    "/wp-content/uploads/sites/15/2017/04/31282746896_4b72a1a05b_k-e1501079586287.jpg": {
+      "width": 1600,
+      "height": 1066,
+      "originalBytes": 275708,
+      "variants": [
+        {
+          "width": 480,
+          "bytes": 31624,
+          "url": "/assets/optimized/a4c87b33cd0e9098892e-480.webp"
+        },
+        {
+          "width": 768,
+          "bytes": 63524,
+          "url": "/assets/optimized/a4c87b33cd0e9098892e-768.webp"
+        },
+        {
+          "width": 1200,
+          "bytes": 120058,
+          "url": "/assets/optimized/a4c87b33cd0e9098892e-1200.webp"
+        },
+        {
+          "width": 1600,
+          "bytes": 177024,
+          "url": "/assets/optimized/a4c87b33cd0e9098892e-1600.webp"
+        }
+      ]
+    },
+    "/wp-content/uploads/sites/15/2017/04/31283099826_2769136730_k-e1501084552179.jpg": {
+      "width": 1599,
+      "height": 1066,
+      "originalBytes": 308431,
+      "variants": [
+        {
+          "width": 480,
+          "bytes": 32374,
+          "url": "/assets/optimized/d0ad353dbe6bfaa25ab0-480.webp"
+        },
+        {
+          "width": 768,
+          "bytes": 69172,
+          "url": "/assets/optimized/d0ad353dbe6bfaa25ab0-768.webp"
+        },
+        {
+          "width": 1200,
+          "bytes": 137662,
+          "url": "/assets/optimized/d0ad353dbe6bfaa25ab0-1200.webp"
+        },
+        {
+          "width": 1599,
+          "bytes": 214350,
+          "url": "/assets/optimized/d0ad353dbe6bfaa25ab0-1599.webp"
+        }
+      ]
+    },
+    "/wp-content/uploads/sites/15/2017/04/DLF_logo_export.png": {
+      "width": 588,
+      "height": 204,
+      "originalBytes": 6270,
+      "variants": []
+    },
+    "/wp-content/uploads/sites/15/2017/04/DLF-Forum-2017-Twitter-header-photo-NO-TEXT-1-e1501084746734.png": {
+      "width": 1600,
+      "height": 534,
+      "originalBytes": 110181,
+      "variants": [
+        {
+          "width": 480,
+          "bytes": 3464,
+          "url": "/assets/optimized/204e0fb45342578586dc-480.webp"
+        },
+        {
+          "width": 768,
+          "bytes": 5878,
+          "url": "/assets/optimized/204e0fb45342578586dc-768.webp"
+        },
+        {
+          "width": 1200,
+          "bytes": 9332,
+          "url": "/assets/optimized/204e0fb45342578586dc-1200.webp"
+        },
+        {
+          "width": 1600,
+          "bytes": 12368,
+          "url": "/assets/optimized/204e0fb45342578586dc-1600.webp"
+        }
+      ]
+    },
+    "/wp-content/uploads/sites/15/2017/04/dmitrij-paskevic-44124-e1501101042542.jpg": {
+      "width": 1600,
+      "height": 1067,
+      "originalBytes": 332060,
+      "variants": [
+        {
+          "width": 480,
+          "bytes": 36462,
+          "url": "/assets/optimized/3cdf5ab2b5965acf10b9-480.webp"
+        },
+        {
+          "width": 768,
+          "bytes": 76244,
+          "url": "/assets/optimized/3cdf5ab2b5965acf10b9-768.webp"
+        },
+        {
+          "width": 1200,
+          "bytes": 147406,
+          "url": "/assets/optimized/3cdf5ab2b5965acf10b9-1200.webp"
+        },
+        {
+          "width": 1600,
+          "bytes": 220556,
+          "url": "/assets/optimized/3cdf5ab2b5965acf10b9-1600.webp"
+        }
+      ]
+    },
+    "/wp-content/uploads/sites/15/2017/04/joshua-peacock-121821-e1501084684797.jpg": {
+      "width": 1600,
+      "height": 1067,
+      "originalBytes": 261760,
+      "variants": [
+        {
+          "width": 480,
+          "bytes": 25634,
+          "url": "/assets/optimized/768ed427520973b0d36a-480.webp"
+        },
+        {
+          "width": 768,
+          "bytes": 54890,
+          "url": "/assets/optimized/768ed427520973b0d36a-768.webp"
+        },
+        {
+          "width": 1200,
+          "bytes": 106202,
+          "url": "/assets/optimized/768ed427520973b0d36a-1200.webp"
+        },
+        {
+          "width": 1600,
+          "bytes": 167434,
+          "url": "/assets/optimized/768ed427520973b0d36a-1600.webp"
+        }
+      ]
+    },
+    "/wp-content/uploads/sites/15/2017/04/joshua-peacock-121823-e1501084640891.jpg": {
+      "width": 1600,
+      "height": 1067,
+      "originalBytes": 325347,
+      "variants": [
+        {
+          "width": 480,
+          "bytes": 30602,
+          "url": "/assets/optimized/efefda2e0318f00cebaf-480.webp"
+        },
+        {
+          "width": 768,
+          "bytes": 71060,
+          "url": "/assets/optimized/efefda2e0318f00cebaf-768.webp"
+        },
+        {
+          "width": 1200,
+          "bytes": 152732,
+          "url": "/assets/optimized/efefda2e0318f00cebaf-1200.webp"
+        },
+        {
+          "width": 1600,
+          "bytes": 252142,
+          "url": "/assets/optimized/efefda2e0318f00cebaf-1600.webp"
+        }
+      ]
+    },
+    "/wp-content/uploads/sites/15/2017/04/joshua-peacock-121826-e1501079796538.jpg": {
+      "width": 1600,
+      "height": 1067,
+      "originalBytes": 411646,
+      "variants": [
+        {
+          "width": 480,
+          "bytes": 40054,
+          "url": "/assets/optimized/06a9a0dfb02681b47b43-480.webp"
+        },
+        {
+          "width": 768,
+          "bytes": 94254,
+          "url": "/assets/optimized/06a9a0dfb02681b47b43-768.webp"
+        },
+        {
+          "width": 1200,
+          "bytes": 199362,
+          "url": "/assets/optimized/06a9a0dfb02681b47b43-1200.webp"
+        },
+        {
+          "width": 1600,
+          "bytes": 327948,
+          "url": "/assets/optimized/06a9a0dfb02681b47b43-1600.webp"
+        }
+      ]
+    },
+    "/wp-content/uploads/sites/15/2017/04/NDSA-image-only-transparent-background.png": {
+      "width": 410,
+      "height": 350,
+      "originalBytes": 58568,
+      "variants": [
+        {
+          "width": 410,
+          "bytes": 8480,
+          "url": "/assets/optimized/7100108f7d180988a662-410.webp"
+        }
+      ]
+    },
+    "/wp-content/uploads/sites/15/2017/05/31179294352_5ddc6b9644_k-e1503070687325.jpg": {
+      "width": 1751,
+      "height": 1254,
+      "originalBytes": 174082,
+      "variants": [
+        {
+          "width": 480,
+          "bytes": 11472,
+          "url": "/assets/optimized/b97b062dbb94192d0adf-480.webp"
+        },
+        {
+          "width": 768,
+          "bytes": 20656,
+          "url": "/assets/optimized/b97b062dbb94192d0adf-768.webp"
+        },
+        {
+          "width": 1200,
+          "bytes": 37106,
+          "url": "/assets/optimized/b97b062dbb94192d0adf-1200.webp"
+        },
+        {
+          "width": 1751,
+          "bytes": 66310,
+          "url": "/assets/optimized/b97b062dbb94192d0adf-1751.webp"
+        }
+      ]
+    },
+    "/wp-content/uploads/sites/15/2017/06/Eira-Tansey-e1498768477136-520x324.jpg": {
+      "width": 520,
+      "height": 324,
+      "originalBytes": 29799,
+      "variants": [
+        {
+          "width": 480,
+          "bytes": 16152,
+          "url": "/assets/optimized/7ce9993e1e132df14914-480.webp"
+        },
+        {
+          "width": 520,
+          "bytes": 18322,
+          "url": "/assets/optimized/7ce9993e1e132df14914-520.webp"
+        }
+      ]
+    },
+    "/wp-content/uploads/sites/15/2017/06/Rasheedah-Phillips-520x324.jpg": {
+      "width": 520,
+      "height": 324,
+      "originalBytes": 50043,
+      "variants": [
+        {
+          "width": 480,
+          "bytes": 37102,
+          "url": "/assets/optimized/02c39dcd3f1d3efd55b4-480.webp"
+        },
+        {
+          "width": 520,
+          "bytes": 41822,
+          "url": "/assets/optimized/02c39dcd3f1d3efd55b4-520.webp"
+        }
+      ]
+    },
+    "/wp-content/uploads/sites/15/2017/07/3745792738_6abe95682c_o.jpg": {
+      "width": 4000,
+      "height": 3000,
+      "originalBytes": 3786627,
+      "variants": [
+        {
+          "width": 480,
+          "bytes": 31450,
+          "url": "/assets/optimized/fe5ec728014a68466ef7-480.webp"
+        },
+        {
+          "width": 768,
+          "bytes": 68140,
+          "url": "/assets/optimized/fe5ec728014a68466ef7-768.webp"
+        },
+        {
+          "width": 1200,
+          "bytes": 154506,
+          "url": "/assets/optimized/fe5ec728014a68466ef7-1200.webp"
+        },
+        {
+          "width": 1920,
+          "bytes": 336090,
+          "url": "/assets/optimized/fe5ec728014a68466ef7-1920.webp"
+        }
+      ]
+    },
+    "/wp-content/uploads/sites/15/2017/07/Arkivum-Logo-no-strap-black1-392x178.png": {
+      "width": 392,
+      "height": 178,
+      "originalBytes": 10443,
+      "variants": []
+    },
+    "/wp-content/uploads/sites/15/2017/07/ARL_logo_2c-392x178.png": {
+      "width": 392,
+      "height": 178,
+      "originalBytes": 24212,
+      "variants": [
+        {
+          "width": 392,
+          "bytes": 7116,
+          "url": "/assets/optimized/a3ab758e4b378ce1059f-392.webp"
+        }
+      ]
+    },
+    "/wp-content/uploads/sites/15/2017/07/Atiz-small-392x93.png": {
+      "width": 392,
+      "height": 93,
+      "originalBytes": 4739,
+      "variants": []
+    },
+    "/wp-content/uploads/sites/15/2017/07/backstage.jpg": {
+      "width": 300,
+      "height": 79,
+      "originalBytes": 8230,
+      "variants": []
+    },
+    "/wp-content/uploads/sites/15/2017/07/DCE_transparentbackground-240x178.png": {
+      "width": 240,
+      "height": 178,
+      "originalBytes": 12757,
+      "variants": [
+        {
+          "width": 240,
+          "bytes": 4442,
+          "url": "/assets/optimized/725d058d5cc8d85e73ad-240.webp"
+        }
+      ]
+    },
+    "/wp-content/uploads/sites/15/2017/07/Degruyter.jpg": {
+      "width": 300,
+      "height": 162,
+      "originalBytes": 4686,
+      "variants": []
+    },
+    "/wp-content/uploads/sites/15/2017/07/DPN-logo-392x178.jpeg": {
+      "width": 392,
+      "height": 178,
+      "originalBytes": 11714,
+      "variants": []
+    },
+    "/wp-content/uploads/sites/15/2017/07/ERL_logo_square-300x178.jpg": {
+      "width": 300,
+      "height": 178,
+      "originalBytes": 8009,
+      "variants": []
+    },
+    "/wp-content/uploads/sites/15/2017/07/Exlibris_ProQuest-392x178.png": {
+      "width": 392,
+      "height": 178,
+      "originalBytes": 16242,
+      "variants": [
+        {
+          "width": 392,
+          "bytes": 10958,
+          "url": "/assets/optimized/e6ca3ea591678d691faa-392.webp"
+        }
+      ]
+    },
+    "/wp-content/uploads/sites/15/2017/07/kress.png": {
+      "width": 338,
+      "height": 122,
+      "originalBytes": 3985,
+      "variants": []
+    },
+    "/wp-content/uploads/sites/15/2017/07/LIPA-370x178.jpg": {
+      "width": 370,
+      "height": 178,
+      "originalBytes": 9730,
+      "variants": []
+    },
+    "/wp-content/uploads/sites/15/2017/07/LJA-Logo-299x178.png": {
+      "width": 299,
+      "height": 178,
+      "originalBytes": 2776,
+      "variants": []
+    },
+    "/wp-content/uploads/sites/15/2017/07/LJP-392x178.jpg": {
+      "width": 392,
+      "height": 178,
+      "originalBytes": 5866,
+      "variants": []
+    },
+    "/wp-content/uploads/sites/15/2017/07/markus-spiske-207946-3.jpg": {
+      "width": 5760,
+      "height": 3840,
+      "originalBytes": 5670996,
+      "variants": [
+        {
+          "width": 480,
+          "bytes": 29244,
+          "url": "/assets/optimized/0099fbaaec3af5072a94-480.webp"
+        },
+        {
+          "width": 768,
+          "bytes": 64768,
+          "url": "/assets/optimized/0099fbaaec3af5072a94-768.webp"
+        },
+        {
+          "width": 1200,
+          "bytes": 131044,
+          "url": "/assets/optimized/0099fbaaec3af5072a94-1200.webp"
+        },
+        {
+          "width": 1920,
+          "bytes": 264250,
+          "url": "/assets/optimized/0099fbaaec3af5072a94-1920.webp"
+        }
+      ]
+    },
+    "/wp-content/uploads/sites/15/2017/07/NEDCC-392x178.jpg": {
+      "width": 392,
+      "height": 178,
+      "originalBytes": 19936,
+      "variants": [
+        {
+          "width": 392,
+          "bytes": 13312,
+          "url": "/assets/optimized/89def71e0cb8fa72dac7-392.webp"
+        }
+      ]
+    },
+    "/wp-content/uploads/sites/15/2017/07/patrik-gothe-444-2.jpg": {
+      "width": 4288,
+      "height": 2848,
+      "originalBytes": 1846620,
+      "variants": [
+        {
+          "width": 480,
+          "bytes": 26950,
+          "url": "/assets/optimized/639c59751be175c43fc6-480.webp"
+        },
+        {
+          "width": 768,
+          "bytes": 50704,
+          "url": "/assets/optimized/639c59751be175c43fc6-768.webp"
+        },
+        {
+          "width": 1200,
+          "bytes": 92106,
+          "url": "/assets/optimized/639c59751be175c43fc6-1200.webp"
+        },
+        {
+          "width": 1920,
+          "bytes": 166314,
+          "url": "/assets/optimized/639c59751be175c43fc6-1920.webp"
+        }
+      ]
+    },
+    "/wp-content/uploads/sites/15/2017/07/PSU_LIB_RGB_2C-392x178.png": {
+      "width": 392,
+      "height": 178,
+      "originalBytes": 24174,
+      "variants": [
+        {
+          "width": 392,
+          "bytes": 19358,
+          "url": "/assets/optimized/ca6246165414f2a36a6b-392.webp"
+        }
+      ]
+    },
+    "/wp-content/uploads/sites/15/2017/07/samvera-fall-316x178.png": {
+      "width": 316,
+      "height": 178,
+      "originalBytes": 11437,
+      "variants": []
+    },
+    "/wp-content/uploads/sites/15/2017/07/UL_Unitmark_187K.png": {
+      "width": 321,
+      "height": 58,
+      "originalBytes": 3016,
+      "variants": []
+    },
+    "/wp-content/uploads/sites/15/2017/07/uls_LOGO_blue-392x135.jpeg": {
+      "width": 392,
+      "height": 135,
+      "originalBytes": 16168,
+      "variants": [
+        {
+          "width": 392,
+          "bytes": 10484,
+          "url": "/assets/optimized/5ee102dbe61585f4de19-392.webp"
+        }
+      ]
+    },
+    "/wp-content/uploads/sites/15/2017/08/2017Fellows-1920x1000.jpg": {
+      "width": 1920,
+      "height": 1000,
+      "originalBytes": 968155,
+      "variants": [
+        {
+          "width": 480,
+          "bytes": 27424,
+          "url": "/assets/optimized/224724d936849fd4bc42-480.webp"
+        },
+        {
+          "width": 768,
+          "bytes": 50152,
+          "url": "/assets/optimized/224724d936849fd4bc42-768.webp"
+        },
+        {
+          "width": 1200,
+          "bytes": 87490,
+          "url": "/assets/optimized/224724d936849fd4bc42-1200.webp"
+        },
+        {
+          "width": 1920,
+          "bytes": 150536,
+          "url": "/assets/optimized/224724d936849fd4bc42-1920.webp"
+        }
+      ]
+    },
+    "/wp-content/uploads/sites/15/2017/08/ADAM-MATTHEW-392x91.jpg": {
+      "width": 392,
+      "height": 91,
+      "originalBytes": 10336,
+      "variants": []
+    },
+    "/wp-content/uploads/sites/15/2017/08/annie-spratt-113596-e1503331963209.jpg": {
+      "width": 1900,
+      "height": 1265,
+      "originalBytes": 168305,
+      "variants": [
+        {
+          "width": 480,
+          "bytes": 15646,
+          "url": "/assets/optimized/25e053f22eb20aa16724-480.webp"
+        },
+        {
+          "width": 768,
+          "bytes": 30588,
+          "url": "/assets/optimized/25e053f22eb20aa16724-768.webp"
+        },
+        {
+          "width": 1200,
+          "bytes": 54476,
+          "url": "/assets/optimized/25e053f22eb20aa16724-1200.webp"
+        },
+        {
+          "width": 1900,
+          "bytes": 98106,
+          "url": "/assets/optimized/25e053f22eb20aa16724-1900.webp"
+        }
+      ]
+    },
+    "/wp-content/uploads/sites/15/2017/08/AnnieSollinger.jpg": {
+      "width": 200,
+      "height": 200,
+      "originalBytes": 11502,
+      "variants": []
+    },
+    "/wp-content/uploads/sites/15/2017/08/Bliss_David.jpg": {
+      "width": 200,
+      "height": 200,
+      "originalBytes": 18593,
+      "variants": [
+        {
+          "width": 200,
+          "bytes": 10842,
+          "url": "/assets/optimized/adde61967fbfc91b846a-200.webp"
+        }
+      ]
+    },
+    "/wp-content/uploads/sites/15/2017/08/born-digital_common-media-392x151.png": {
+      "width": 392,
+      "height": 151,
+      "originalBytes": 11648,
+      "variants": []
+    },
+    "/wp-content/uploads/sites/15/2017/08/Caldwell.jpg": {
+      "width": 200,
+      "height": 200,
+      "originalBytes": 14996,
+      "variants": [
+        {
+          "width": 200,
+          "bytes": 7932,
+          "url": "/assets/optimized/a47a526640fa3dec1182-200.webp"
+        }
+      ]
+    },
+    "/wp-content/uploads/sites/15/2017/08/Chiu.jpg": {
+      "width": 200,
+      "height": 200,
+      "originalBytes": 9900,
+      "variants": []
+    },
+    "/wp-content/uploads/sites/15/2017/08/DS_black-21-392x178.png": {
+      "width": 392,
+      "height": 178,
+      "originalBytes": 32586,
+      "variants": [
+        {
+          "width": 392,
+          "bytes": 22790,
+          "url": "/assets/optimized/6f3b3e9a747c6ae882dd-392.webp"
+        }
+      ]
+    },
+    "/wp-content/uploads/sites/15/2017/08/ferretti_jennifer.jpg": {
+      "width": 200,
+      "height": 200,
+      "originalBytes": 16316,
+      "variants": [
+        {
+          "width": 200,
+          "bytes": 9074,
+          "url": "/assets/optimized/8005d543e9f152d28c00-200.webp"
+        }
+      ]
+    },
+    "/wp-content/uploads/sites/15/2017/08/Fletcher-Durant.jpg": {
+      "width": 200,
+      "height": 200,
+      "originalBytes": 12445,
+      "variants": [
+        {
+          "width": 200,
+          "bytes": 6086,
+          "url": "/assets/optimized/7c8e49331ca8578d1fca-200.webp"
+        }
+      ]
+    },
+    "/wp-content/uploads/sites/15/2017/08/Furness_Amy.jpg": {
+      "width": 200,
+      "height": 200,
+      "originalBytes": 13510,
+      "variants": [
+        {
+          "width": 200,
+          "bytes": 7458,
+          "url": "/assets/optimized/83def573200d14aaff64-200.webp"
+        }
+      ]
+    },
+    "/wp-content/uploads/sites/15/2017/08/Hyman.jpg": {
+      "width": 200,
+      "height": 200,
+      "originalBytes": 12993,
+      "variants": [
+        {
+          "width": 200,
+          "bytes": 6336,
+          "url": "/assets/optimized/ead5e7a5f6c542512c1d-200.webp"
+        }
+      ]
+    },
+    "/wp-content/uploads/sites/15/2017/08/JesseaYoung.jpg": {
+      "width": 200,
+      "height": 200,
+      "originalBytes": 18188,
+      "variants": [
+        {
+          "width": 200,
+          "bytes": 10428,
+          "url": "/assets/optimized/accee4321e38ae43daa8-200.webp"
+        }
+      ]
+    },
+    "/wp-content/uploads/sites/15/2017/08/jez-timms-4728-2-e1503678095251.jpg": {
+      "width": 2000,
+      "height": 1479,
+      "originalBytes": 185188,
+      "variants": [
+        {
+          "width": 480,
+          "bytes": 10280,
+          "url": "/assets/optimized/9135ba254f760a39bce8-480.webp"
+        },
+        {
+          "width": 768,
+          "bytes": 23096,
+          "url": "/assets/optimized/9135ba254f760a39bce8-768.webp"
+        },
+        {
+          "width": 1200,
+          "bytes": 48922,
+          "url": "/assets/optimized/9135ba254f760a39bce8-1200.webp"
+        },
+        {
+          "width": 1920,
+          "bytes": 110252,
+          "url": "/assets/optimized/9135ba254f760a39bce8-1920.webp"
+        }
+      ]
+    },
+    "/wp-content/uploads/sites/15/2017/08/Kelly_Jane09.png": {
+      "width": 200,
+      "height": 200,
+      "originalBytes": 61825,
+      "variants": [
+        {
+          "width": 200,
+          "bytes": 3166,
+          "url": "/assets/optimized/09cf51e6ed6d9e34e55b-200.webp"
+        }
+      ]
+    },
+    "/wp-content/uploads/sites/15/2017/08/Khan_Nushrat.jpg": {
+      "width": 200,
+      "height": 200,
+      "originalBytes": 10631,
+      "variants": []
+    },
+    "/wp-content/uploads/sites/15/2017/08/Kostelic.jpg": {
+      "width": 200,
+      "height": 200,
+      "originalBytes": 12029,
+      "variants": [
+        {
+          "width": 200,
+          "bytes": 5652,
+          "url": "/assets/optimized/6c0dd3c5beada2482a9c-200.webp"
+        }
+      ]
+    },
+    "/wp-content/uploads/sites/15/2017/08/Lopez_Natalia-2017-14.png": {
+      "width": 200,
+      "height": 200,
+      "originalBytes": 78793,
+      "variants": [
+        {
+          "width": 200,
+          "bytes": 4932,
+          "url": "/assets/optimized/6995d1658abec27910b3-200.webp"
+        }
+      ]
+    },
+    "/wp-content/uploads/sites/15/2017/08/LP-Headshot.square-e1502138485185-520x324.jpg": {
+      "width": 520,
+      "height": 324,
+      "originalBytes": 23735,
+      "variants": [
+        {
+          "width": 480,
+          "bytes": 12792,
+          "url": "/assets/optimized/825be90ac895e896c93d-480.webp"
+        },
+        {
+          "width": 520,
+          "bytes": 15064,
+          "url": "/assets/optimized/825be90ac895e896c93d-520.webp"
+        }
+      ]
+    },
+    "/wp-content/uploads/sites/15/2017/08/Muchemwa_Chido.jpg": {
+      "width": 200,
+      "height": 200,
+      "originalBytes": 11457,
+      "variants": []
+    },
+    "/wp-content/uploads/sites/15/2017/08/picturae-small-390x178.jpg": {
+      "width": 390,
+      "height": 178,
+      "originalBytes": 6301,
+      "variants": []
+    },
+    "/wp-content/uploads/sites/15/2017/08/Rodriguez-Sandy-profile.jpg": {
+      "width": 200,
+      "height": 200,
+      "originalBytes": 15025,
+      "variants": [
+        {
+          "width": 200,
+          "bytes": 7922,
+          "url": "/assets/optimized/cb7598b5ac2945500cde-200.webp"
+        }
+      ]
+    },
+    "/wp-content/uploads/sites/15/2017/08/TheMediaPreserve_color-392x178.png": {
+      "width": 392,
+      "height": 178,
+      "originalBytes": 23228,
+      "variants": []
+    },
+    "/wp-content/uploads/sites/15/2017/08/Traill_Stacie.jpg": {
+      "width": 200,
+      "height": 200,
+      "originalBytes": 11001,
+      "variants": []
+    },
+    "/wp-content/uploads/sites/15/2017/08/treshani-perera.jpg": {
+      "width": 200,
+      "height": 200,
+      "originalBytes": 9279,
+      "variants": []
+    },
+    "/wp-content/uploads/sites/15/2017/08/Urban.jpg": {
+      "width": 200,
+      "height": 200,
+      "originalBytes": 8921,
+      "variants": []
+    },
+    "/wp-content/uploads/sites/15/2017/09/AnaNdumu.jpg": {
+      "width": 200,
+      "height": 200,
+      "originalBytes": 7796,
+      "variants": []
+    },
+    "/wp-content/uploads/sites/15/2017/09/AndreaJackson.jpg": {
+      "width": 200,
+      "height": 200,
+      "originalBytes": 11661,
+      "variants": []
+    },
+    "/wp-content/uploads/sites/15/2017/09/ArneiceBowen.jpg": {
+      "width": 200,
+      "height": 200,
+      "originalBytes": 10570,
+      "variants": []
+    },
+    "/wp-content/uploads/sites/15/2017/09/Chianta-Dorsey.jpg": {
+      "width": 200,
+      "height": 200,
+      "originalBytes": 10143,
+      "variants": []
+    },
+    "/wp-content/uploads/sites/15/2017/09/ChrisIweha.jpg": {
+      "width": 200,
+      "height": 200,
+      "originalBytes": 8354,
+      "variants": []
+    },
+    "/wp-content/uploads/sites/15/2017/09/CLIRlogo.png": {
+      "width": 355,
+      "height": 161,
+      "originalBytes": 20702,
+      "variants": [
+        {
+          "width": 355,
+          "bytes": 7520,
+          "url": "/assets/optimized/d0de206c8c6d6941b0fe-355.webp"
+        }
+      ]
+    },
+    "/wp-content/uploads/sites/15/2017/09/Danisha.jpg": {
+      "width": 200,
+      "height": 200,
+      "originalBytes": 8921,
+      "variants": []
+    },
+    "/wp-content/uploads/sites/15/2017/09/db_staffpic.jpg": {
+      "width": 200,
+      "height": 200,
+      "originalBytes": 12901,
+      "variants": [
+        {
+          "width": 200,
+          "bytes": 6172,
+          "url": "/assets/optimized/86163d14290c9e5d655d-200.webp"
+        }
+      ]
+    },
+    "/wp-content/uploads/sites/15/2017/09/digirati-logo-3-392x178.jpg": {
+      "width": 392,
+      "height": 178,
+      "originalBytes": 8779,
+      "variants": []
+    },
+    "/wp-content/uploads/sites/15/2017/09/elizabeth-jean.jpg": {
+      "width": 200,
+      "height": 200,
+      "originalBytes": 10232,
+      "variants": []
+    },
+    "/wp-content/uploads/sites/15/2017/09/Holly.jpg": {
+      "width": 200,
+      "height": 200,
+      "originalBytes": 8375,
+      "variants": []
+    },
+    "/wp-content/uploads/sites/15/2017/09/horaciosierra_crop.jpg": {
+      "width": 200,
+      "height": 200,
+      "originalBytes": 14235,
+      "variants": [
+        {
+          "width": 200,
+          "bytes": 6820,
+          "url": "/assets/optimized/f6b31abf7bcec4bf6489-200.webp"
+        }
+      ]
+    },
+    "/wp-content/uploads/sites/15/2017/09/imls_logo_2c-392x178.jpg": {
+      "width": 392,
+      "height": 178,
+      "originalBytes": 9444,
+      "variants": []
+    },
+    "/wp-content/uploads/sites/15/2017/09/Jeangreenepic.png": {
+      "width": 200,
+      "height": 200,
+      "originalBytes": 86395,
+      "variants": [
+        {
+          "width": 200,
+          "bytes": 6204,
+          "url": "/assets/optimized/d3a2cec0c38b470bffd4-200.webp"
+        }
+      ]
+    },
+    "/wp-content/uploads/sites/15/2017/09/Jessica-Neal.jpg": {
+      "width": 200,
+      "height": 200,
+      "originalBytes": 16639,
+      "variants": [
+        {
+          "width": 200,
+          "bytes": 9810,
+          "url": "/assets/optimized/b42844ecc1e1c4acec0e-200.webp"
+        }
+      ]
+    },
+    "/wp-content/uploads/sites/15/2017/09/KG.jpeg": {
+      "width": 200,
+      "height": 200,
+      "originalBytes": 7555,
+      "variants": []
+    },
+    "/wp-content/uploads/sites/15/2017/09/kYm.jpg": {
+      "width": 200,
+      "height": 200,
+      "originalBytes": 17269,
+      "variants": [
+        {
+          "width": 200,
+          "bytes": 9912,
+          "url": "/assets/optimized/ca7015c4fd867dca4a89-200.webp"
+        }
+      ]
+    },
+    "/wp-content/uploads/sites/15/2017/09/Laura-Adair-Johnson.jpg": {
+      "width": 200,
+      "height": 200,
+      "originalBytes": 9940,
+      "variants": []
+    },
+    "/wp-content/uploads/sites/15/2017/09/Letisha-Stacey-1_crop.jpg": {
+      "width": 200,
+      "height": 200,
+      "originalBytes": 11093,
+      "variants": []
+    },
+    "/wp-content/uploads/sites/15/2017/09/logo_i2S_small-392x178.jpg": {
+      "width": 392,
+      "height": 178,
+      "originalBytes": 7332,
+      "variants": []
+    },
+    "/wp-content/uploads/sites/15/2017/09/LYRASIS_Logo_Landscape-392x178.jpg": {
+      "width": 392,
+      "height": 178,
+      "originalBytes": 6998,
+      "variants": []
+    },
+    "/wp-content/uploads/sites/15/2017/09/mary-jo-fayoyin.jpg": {
+      "width": 200,
+      "height": 200,
+      "originalBytes": 13508,
+      "variants": [
+        {
+          "width": 200,
+          "bytes": 7154,
+          "url": "/assets/optimized/e32f7d1aa7bdd2552802-200.webp"
+        }
+      ]
+    },
+    "/wp-content/uploads/sites/15/2017/09/MonikaRhue-4.jpg": {
+      "width": 200,
+      "height": 200,
+      "originalBytes": 15611,
+      "variants": [
+        {
+          "width": 200,
+          "bytes": 7890,
+          "url": "/assets/optimized/d27d3619836e3e53364d-200.webp"
+        }
+      ]
+    },
+    "/wp-content/uploads/sites/15/2017/09/nicolaandrews.jpg": {
+      "width": 200,
+      "height": 200,
+      "originalBytes": 11155,
+      "variants": []
+    },
+    "/wp-content/uploads/sites/15/2017/09/PearlAdzeiStonnes.png": {
+      "width": 200,
+      "height": 200,
+      "originalBytes": 67786,
+      "variants": [
+        {
+          "width": 200,
+          "bytes": 3726,
+          "url": "/assets/optimized/334921480022369e4b02-200.webp"
+        }
+      ]
+    },
+    "/wp-content/uploads/sites/15/2017/09/Shatiqua.jpg": {
+      "width": 200,
+      "height": 200,
+      "originalBytes": 8443,
+      "variants": []
+    },
+    "/wp-content/uploads/sites/15/2017/09/Tatiana_Bryant.jpg": {
+      "width": 200,
+      "height": 200,
+      "originalBytes": 7973,
+      "variants": []
+    },
+    "/wp-content/uploads/sites/15/2017/09/Vanissa.jpg": {
+      "width": 200,
+      "height": 200,
+      "originalBytes": 13659,
+      "variants": [
+        {
+          "width": 200,
+          "bytes": 6992,
+          "url": "/assets/optimized/b6da804428bb3356b9ad-200.webp"
+        }
+      ]
+    },
+    "/wp-content/uploads/sites/15/2017/09/Zakiya-Collier.jpg": {
+      "width": 200,
+      "height": 200,
+      "originalBytes": 16624,
+      "variants": [
+        {
+          "width": 200,
+          "bytes": 9406,
+          "url": "/assets/optimized/d120c1c83248c852b553-200.webp"
+        }
+      ]
+    },
+    "/wp-content/uploads/sites/15/2017/10/i2Sphoto.png": {
+      "width": 975,
+      "height": 650,
+      "originalBytes": 1231500,
+      "variants": [
+        {
+          "width": 480,
+          "bytes": 30296,
+          "url": "/assets/optimized/c2b5a5f3cf0af5b0857f-480.webp"
+        },
+        {
+          "width": 768,
+          "bytes": 62060,
+          "url": "/assets/optimized/c2b5a5f3cf0af5b0857f-768.webp"
+        },
+        {
+          "width": 975,
+          "bytes": 86026,
+          "url": "/assets/optimized/c2b5a5f3cf0af5b0857f-975.webp"
+        }
+      ]
+    },
+    "/wp-content/uploads/sites/15/2017/10/i2Sphoto2-300x233.png": {
+      "width": 300,
+      "height": 233,
+      "originalBytes": 121647,
+      "variants": [
+        {
+          "width": 300,
+          "bytes": 11364,
+          "url": "/assets/optimized/17274cf5cf864bdb6020-300.webp"
+        }
+      ]
+    },
+    "/wp-content/uploads/sites/15/2017/10/Nightingalehtr.jpg": {
+      "width": 392,
+      "height": 603,
+      "originalBytes": 40069,
+      "variants": [
+        {
+          "width": 392,
+          "bytes": 21678,
+          "url": "/assets/optimized/9c9a87cc3d5e23d30039-392.webp"
+        }
+      ]
+    },
+    "/wp-content/uploads/sites/15/2017/10/rebellion-2.jpg": {
+      "width": 1366,
+      "height": 767,
+      "originalBytes": 112346,
+      "variants": [
+        {
+          "width": 480,
+          "bytes": 15074,
+          "url": "/assets/optimized/f41134f02d849bf90acb-480.webp"
+        },
+        {
+          "width": 768,
+          "bytes": 31550,
+          "url": "/assets/optimized/f41134f02d849bf90acb-768.webp"
+        },
+        {
+          "width": 1200,
+          "bytes": 58072,
+          "url": "/assets/optimized/f41134f02d849bf90acb-1200.webp"
+        },
+        {
+          "width": 1366,
+          "bytes": 71200,
+          "url": "/assets/optimized/f41134f02d849bf90acb-1366.webp"
+        }
+      ]
+    }
+  }
+}

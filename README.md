@@ -4,6 +4,8 @@ Eleventy publishes 124 original public URLs. 121 use captured, rendered WordPres
 
 ## Build and preview
 
+Use Node.js 22 or newer. Image generation uses Sharp; install its platform dependencies through `npm ci` (do not omit optional dependencies).
+
 ```sh
 npm ci
 npm start
@@ -51,6 +53,16 @@ The public Sched calendar and schedule listing are committed in `data/schedule/`
 `src/uploads` publishes at `/wp-content/uploads/sites/15/`. Original frontend theme assets live in `src/assets/fudge-2` and `src/assets/fudge2-child`; PHP source and accessibility plugins are not published. Commit the generated data and required public assets/uploads for repeatable GitHub builds. No deployment is enabled yet.
 
 URLs target the domain root, preferably `forum2017.diglib.org`. A GitHub project subpath would need URL-prefix handling.
+
+## Image delivery
+
+Every build transforms local upload images through `lib/images.js`. Responsive WebP alternatives use widths up to 480, 768, 1200, and 1920 pixels without enlarging the source. A variant is only advertised when it is smaller than its original. The original image and any original `srcset` remain the fallback inside `<picture>`; every historical upload URL is still published unchanged.
+
+Hero images load eagerly with high priority. Other images receive asynchronous decoding and missing intrinsic dimensions; below-the-fold images load lazily. The first content image is kept eager as a conservative layout heuristic. The homepage's three identical device-specific hero images become one responsive image.
+
+Generated images have content-hashed filenames under `_site/assets/optimized/`. That generated directory is refreshed for each build; encoded images are reused from ignored `.cache/images/`. The first build performs encoding, and subsequent builds reuse the cache. Builds require no external image services. `data/asset-report.json` inventories referenced originals, variant sizes, lazy-loading counts, and estimated file-size savings; its totals are not measured network transfer sizes.
+
+On the eventual production host, serve `/assets/optimized/` with `Cache-Control: public, max-age=31536000, immutable` and enable Brotli/gzip for HTML, CSS, JavaScript, and JSON. Keep HTML revalidating so it points to new image hashes after updates. These are hosting settings, not enabled by Eleventy itself. Original uploads remain in the deployment for preservation; this work reduces browser transfers rather than the size of that archival collection.
 
 ## Validation
 

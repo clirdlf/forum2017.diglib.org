@@ -64,3 +64,8 @@ a:focus-visible,button:focus-visible{outline:3px solid #006ca3;outline-offset:4p
 .schedule-detail{padding:16px}
 .schedule-description{white-space:pre-line}
 @media print{.schedule-session::details-content{content-visibility:visible}.schedule-session .schedule-detail{display:block}.schedule-days{display:none}}
+
+/* Keep legacy image positioning while letting the browser select one source. */
+.archive-picture{display:contents}
+.hero__images .archive-responsive-hero{display:block!important;object-fit:cover;width:100%;height:100%}
+img[data-archive-intrinsic]:not(.background_image){max-width:100%;height:auto}
