@@ -22,6 +22,7 @@ export default function(eleventyConfig) {
   });
   eleventyConfig.addPassthroughCopy('src/assets');
   eleventyConfig.addPassthroughCopy('src/robots.txt');
+  eleventyConfig.addPassthroughCopy('src/CNAME');
   eleventyConfig.addPassthroughCopy({'src/uploads': 'wp-content/uploads/sites/15'});
   eleventyConfig.addPassthroughCopy({'data/schedule/schedule.ics': 'assets/schedule.ics'});
   eleventyConfig.addWatchTarget('lib/');
