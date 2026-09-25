@@ -1,0 +1,16 @@
+{
+  "capturedAt": "2026-09-25T00:23:48.127769+00:00",
+  "sessionCount": 151,
+  "captures": [
+    {
+      "file": "schedule.html",
+      "url": "https://dlfforum2017.sched.com/",
+      "sha256": "98f24e644f9ca5d2b1b4a2d634e3d6564053c74d118d901098dc18dbcdeaadfb"
+    },
+    {
+      "file": "schedule.ics",
+      "url": "https://dlfforum2017.sched.com/all.ics",
+      "sha256": "b74093a0f84bf0cfa3e815fcf8efeecf94ac13f8eb8f7c1839544f9ed26c3d2b"
+    }
+  ]
+}

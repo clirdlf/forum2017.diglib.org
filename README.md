@@ -30,13 +30,21 @@ Generated output is stored in `src/_data/wordpress.json`. Do not edit it directl
 
 - Removed both accessibility plugins' assets, toolbar markup, and styles. Captured pages receive a main landmark, skip link, labeled navigation/social links, and alternatives for decorative images.
 - Removed analytics, WordPress/plugin runtime scripts, forms, and unused API-discovery links. Small local JavaScript handles the responsive navigation; the header stays in normal document flow below the archive notice.
-- Preserved Sched's HTTPS embed and added a direct schedule link. The preview rendered the theme correctly, but the remote schedule iframe did not finish loading during verification. Sched and Google Fonts remain external dependencies.
+- Replaced Sched embeds at build time with a local schedule on `/schedule/` and day links on other pages. Session content no longer requires Sched or JavaScript. Google Fonts remain an external dependency.
 - Decoded public Cloudflare email-protection links locally.
 - Preserved local upload paths and corrected malformed internal Twitter/IMLS and visitor-guide links.
 - A shared archive notice identifies historical deadlines and closed event services on every route.
 - Empty map widgets become static venue information and a map link. Dead hash-only pagination links and empty newsletter sections are removed at import time. Original historical content is retained.
 - Mobile navigation works without JavaScript; when JavaScript is available, it supports expanded state, Escape to close and restore focus, and excludes collapsed links from keyboard navigation.
 - `scripts/archive_html.py` owns these adaptations; the notice is shared with fallback pages through `src/_includes/archive-notice.html`.
+
+## Preserved schedule
+
+The public Sched calendar and schedule listing are committed in `data/schedule/`. The calendar supplies 151 session titles, descriptions, locations, categories, and start/end times; the listing supplies speaker names for 103 sessions. Sessions without speaker listings remain unlabeled rather than inferred. Linked presentations, speaker profiles, and other external resources are not mirrored.
+
+`provenance.json` records source URLs, capture time, expected session count, and SHA-256 checksums. Regenerate `src/_data/schedule.json` offline with `npm run import:schedule` (Python 3.9+ with system timezone data). The importer verifies checksums, date ranges, unique IDs, and agreement between the two source captures before writing output. Refreshing captures is a deliberate maintenance task: retrieve the two recorded public URLs, review the changes, and update the provenance manifest before importing.
+
+`lib/schedule.js` builds the local schedule using escaped text and native disclosure controls. Times are converted from the export's UTC timestamps to `America/New_York` (EDT for the conference dates). The unmodified source calendar is available at `/assets/schedule.ics`. Builds use committed JSON and never fetch Sched. Original WordPress captures may still contain embed markup; the renderer removes it from published HTML.
 
 ## Assets and deployment
 

@@ -9,8 +9,9 @@
     "import:wordpress": "python3 scripts/import-wordpress.py",
     "import:rendered": "python3 scripts/import-rendered.py",
     "check": "python3 scripts/check-archive.py",
-    "test": "python3 -m unittest discover -s tests",
-    "validate": "npm test && npm run build && npm run check"
+    "test": "python3 -m unittest discover -s tests && node --test tests/*.test.js",
+    "validate": "npm test && npm run build && npm run check",
+    "import:schedule": "python3 scripts/import-schedule.py"
   },
   "keywords": [],
   "author": "",

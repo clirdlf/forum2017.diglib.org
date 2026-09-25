@@ -32,6 +32,8 @@ class Document(HTMLParser):
         if tag == 'img' and 'alt' not in d: self.issues.append('Image missing alt')
         if tag == 'a' and d.get('href') == '#': self.issues.append('Inactive hash link')
         if tag == 'form': self.issues.append('Unadapted form')
+        if tag in ('script', 'iframe') and 'sched.com' in d.get('src', ''):
+            self.issues.append('Remote Sched runtime must be replaced with local content')
         for key, value in attrs:
             if not value: continue
             if key in ('href', 'src', 'poster'): self.urls.append(value)
@@ -77,6 +79,13 @@ def audit(site, expected):
         if doc.issues: issues[str(page.relative_to(site))] = sorted(set(doc.issues))
         if re.search(r'\[/?(?:efcb-section-|woocommerce_|sched\s)', page.read_text()):
             shortcodes.append(str(page.relative_to(site)))
+    if '/schedule/' in expected:
+        schedule_page = pages.get(site / 'schedule/index.html')
+        sessions = json.loads((ROOT / 'src/_data/schedule.json').read_text())['sessions']
+        expected_ids = {'session-' + session['id'] for session in sessions}
+        actual_ids = {value for value in schedule_page.ids if value.startswith('session-')} if schedule_page else set()
+        if expected_ids != actual_ids:
+            issues.setdefault('schedule/index.html', []).append('Preserved schedule sessions are missing or unexpected')
     actual = {'/' + str(p.relative_to(site)).removesuffix('index.html') for p in pages}
     return {
         'pageCount': len(pages),

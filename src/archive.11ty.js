@@ -1,3 +1,4 @@
+import {replaceScheduleEmbed} from '../lib/schedule.js';
 import {readFileSync} from 'node:fs';
 const archiveNotice = readFileSync(new URL('./_includes/archive-notice.html', import.meta.url), 'utf8');
 const esc = (value = '') => String(value).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -11,8 +12,8 @@ export default class {
   data() {
     return {pagination: {data: 'wordpress.pages', size: 1, alias: 'entry'}, permalink: data => data.entry.url};
   }
-  render({entry, wordpress}) {
-    if (entry.rendered) return entry.rendered;
+  render({entry, wordpress, schedule}) {
+    if (entry.rendered) return replaceScheduleEmbed(entry.rendered, entry, schedule);
     const home = entry.url === '/';
     return `<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">

@@ -26,7 +26,7 @@ class ArchiveHTML(HTMLParser):
         classes = d.get('class', '').split()
         original = tag
         previous = self.suppressed
-        drop = 'subscribe' in classes or (tag == 'a' and d.get('href') == '#')
+        drop = bool({'subscribe', 'site__footer-txt'} & set(classes)) or (tag == 'a' and d.get('href') == '#')
         if 'where' in classes:
             if not previous:
                 self.out.append(VENUE)

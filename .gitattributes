@@ -1,0 +1,3 @@
+# Preserve acquisition bytes so provenance checksums survive every checkout.
+data/schedule/schedule.html -text
+data/schedule/schedule.ics -text
