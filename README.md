@@ -76,7 +76,7 @@ See [the accessibility review](docs/accessibility-review.md) for findings, fixes
 
 ## Validation
 
-Run `npm run validate` for regression fixtures, the build, and the generated-site audit. GitHub Actions runs the same command on pushes and pull requests. `npm run check` alone checks the existing `_site` output. `data/public-routes.json` is the committed preservation baseline; update it deliberately only when the published route set changes.
+Run `npm run validate` for regression fixtures, the build, and the generated-site audit. The [Build and validate site](.github/workflows/validate.yml) GitHub Actions workflow runs the same command on pushes, pull requests, and manual runs from the Actions tab. Successful runs upload `_site/` as a downloadable `site` artifact retained for 14 days. The workflow builds the site without deploying it. `npm run check` alone checks the existing `_site` output. `data/public-routes.json` is the committed preservation baseline; update it deliberately only when the published route set changes.
 
 
 `npm run check` audits generated HTML links, images/srcset, remaining supported shortcode syntax, and PHP output. It also checks local fragments, referenced CSS assets, the independent route manifest, and basic archive/accessibility markup. Missing assets, an empty/incomplete build, unexpected routes, or any reported issue fail the command. It does not fetch external links or certify WCAG conformance. Reports:
