@@ -6,7 +6,9 @@
   "scripts": {
     "start": "eleventy --serve",
     "build": "eleventy",
-    "import:wordpress": "python3 scripts/import-wordpress.py"
+    "import:wordpress": "python3 scripts/import-wordpress.py",
+    "import:rendered": "python3 scripts/import-rendered.py",
+    "check": "python3 scripts/check-archive.py"
   },
   "keywords": [],
   "author": "",

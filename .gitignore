@@ -3,3 +3,5 @@ node_modules/
 data/plugins/
 data/themes/
 _site/
+
+data/rendered/

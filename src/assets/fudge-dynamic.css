@@ -1,0 +1,46 @@
+ .tickets__item_best::before { content: "Best!"; } 
+    .btn, .header-menu__wrap .menu-item a::after, .site__title::after, .speakers, .schedule__concurrent::after, .schedule__date-btn.active, .ares-select__popup li:hover, .ares-select__popup li.active, .tickets__item_best::before, .tickets, .subscribe,
+    .follow-us, .media-gallery__item_video:hover::before, .swiper-popup__close:hover:before, .swiper-popup__close:hover:after, .social a, .schedule__time span, .registration, .comment-form .submit, .time-schedule__save a:hover, .features {
+        background-color: #0067a1;
+    }
+    .btn, .get-touch a, .swiper-popup .swiper-button-next:hover:before, .swiper-popup .swiper-button-prev:hover:before, .swiper-popup .swiper-button-next:hover:before,
+    .swiper-popup .swiper-button-prev:hover:before, .time-schedule__save a:hover, .description p a:hover {
+        border-color: #0067a1;
+    }
+    .news__date, .footer-menu__link:hover, .get-touch a, a, .description p a, .tickets__list li:before {
+        color: #0067a1;
+    }
+
+    .nicescroll-cursors {
+        background-color: #0067a1 !important;
+    }
+
+
+    .btn_6, .btn_10, .site__header.fixed .site__header-top, .header_background .site__header-top, .site__footer, .hero, .media-gallery, .connect, .register-now.register-now__no-images {
+        background-color: #00171F;
+    }
+    .media-gallery__item {
+        border-color: #00171F;
+    }
+    ::-webkit-input-placeholder {
+        color: #00171F;
+    }
+    :-moz-placeholder {
+        color: #00171F;
+    }
+    body, .placeholder, .social a, .site__title, .site__form textarea, .site__form input, .site__form-sent, .btn, .header-menu__wrap .menu-item a.btn:hover, .header-menu__wrap .menu-item a.active, .sub-menu li.menu-item a:hover, .sub-menu li.menu-item a.active,
+     .sub-menu li.menu-item a, .header-menu .opened .menu-item a, .time-schedule__save a:hover i, .countdown-timer, .description__watch-video, .speakers__person, .schedule__date-btn, .schedule__date-btn.active, .schedule__time span, .schedule__main-place:hover, .schedule__speaker-name, .tickets__item_best:before,
+     .features__logo, .header-menu .opened .menu-item a, .header-menu__wrap .menu-item a.btn, .sub-menu li.menu-item a, .header-menu__wrap .menu > .menu-item > a.btn, .exhibitors__filters .site__form span, .features__title, .contact-us__content-double dt, .contact-us p {
+        color: #00171F;
+    }
+    .site__title_white, .btn_6 {
+        color: #FFF;
+    }
+
+
+    .btn_5, .btn:hover, .header-menu__wrap .menu-item a.btn:hover, .social a:hover, .ares-select_1 .ares-select__popup li:hover, .ares-select_1 .ares-select__popup li.active {
+        background-color: #00466e;
+    }
+     .btn:hover,  .header-menu__wrap .menu-item a.btn:hover {
+        border-color: #00466e;
+     }

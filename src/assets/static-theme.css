@@ -1,0 +1,14 @@
+/* Original theme styles remain authoritative. Only static-runtime adaptations here. */
+.site__header .header-menu .menu-item:hover>.sub-menu,.site__header .header-menu .menu-item:focus-within>.sub-menu{display:block;opacity:1;visibility:visible}
+.site__header .header-menu .menu-item:focus-within>a{outline:2px solid currentColor;outline-offset:3px}
+.hero__images .background_image{object-fit:cover;width:100%;height:100%}
+.hero__images{height:100%}
+.news__item{opacity:1;visibility:visible}
+.archive-unavailable{padding:15px;text-align:center}
+@media(max-width:1023px){.header-menu.static-open{transform:none;display:block;opacity:1;visibility:visible;right:0}.header-menu.static-open .header-menu__wrap{height:auto;max-height:85vh;overflow:auto}.header-menu .sub-menu{position:static;display:block;opacity:1;visibility:visible}.menu-btn{z-index:101}}
+.schedule-direct{text-align:center;margin:12px 0;font-size:14px}
+[hidden]{display:none!important}
+
+/* Replace the theme's JS-sized footer spacer with normal document flow. */
+.site__footer{position:relative;left:auto;right:auto;bottom:auto;clear:both}
+.site__increase{display:none}

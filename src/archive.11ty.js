@@ -10,6 +10,7 @@ export default class {
     return {pagination: {data: 'wordpress.pages', size: 1, alias: 'entry'}, permalink: data => data.entry.url};
   }
   render({entry, wordpress}) {
+    if (entry.rendered) return entry.rendered;
     const home = entry.url === '/';
     return `<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">

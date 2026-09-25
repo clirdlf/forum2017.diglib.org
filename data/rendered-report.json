@@ -1,0 +1,8 @@
+{
+  "captured": 121,
+  "fallbackRoutes": [
+    "/cart/",
+    "/checkout/",
+    "/my-account/"
+  ]
+}
