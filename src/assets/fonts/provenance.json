@@ -1,0 +1,141 @@
+{
+  "capturedAt": "2026-09-25T12:11:09.988903+00:00",
+  "stylesheetSource": "https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,700&family=Roboto+Slab:wght@400;700&display=swap",
+  "files": [
+    {
+      "file": "f2ab3c15c750e03fb1bc.woff2",
+      "url": "https://fonts.gstatic.com/s/roboto/v51/KFO5CnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmkAnkaWzU.woff2",
+      "sha256": "f2ab3c15c750e03fb1bc8887786a9ef826d134c461f830877366399295861e55"
+    },
+    {
+      "file": "abf79b1a281be8135c1b.woff2",
+      "url": "https://fonts.gstatic.com/s/roboto/v51/KFO5CnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmkBXkaWzU.woff2",
+      "sha256": "abf79b1a281be8135c1bde7bf807267b1507adbdbe3023d5f5a8781ab6655371"
+    },
+    {
+      "file": "14f23757c6b41b4b6c0b.woff2",
+      "url": "https://fonts.gstatic.com/s/roboto/v51/KFO5CnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmkBnka.woff2",
+      "sha256": "14f23757c6b41b4b6c0b967ca3fa74ff47a868728158373461c4e6e4b6368f19"
+    },
+    {
+      "file": "d8d0c88eea1036dc3e73.woff2",
+      "url": "https://fonts.gstatic.com/s/roboto/v51/KFO5CnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmkC3kaWzU.woff2",
+      "sha256": "d8d0c88eea1036dc3e7322cd0a1a3eb6fc1dd86da24c7de690e70aac1bd62f05"
+    },
+    {
+      "file": "7f21d061a9de1ea78a85.woff2",
+      "url": "https://fonts.gstatic.com/s/roboto/v51/KFO5CnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmkCHkaWzU.woff2",
+      "sha256": "7f21d061a9de1ea78a858938ff3b8e677869656b10bad470fc6039f8f3daf329"
+    },
+    {
+      "file": "3e6b22d2171656f2f886.woff2",
+      "url": "https://fonts.gstatic.com/s/roboto/v51/KFO5CnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmkCXkaWzU.woff2",
+      "sha256": "3e6b22d2171656f2f886c209e04c70555a6bdb4903c011811726830492cd6ba9"
+    },
+    {
+      "file": "75697119399fa9c3be54.woff2",
+      "url": "https://fonts.gstatic.com/s/roboto/v51/KFO5CnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmkCnkaWzU.woff2",
+      "sha256": "75697119399fa9c3be54924e02b42ba6dc2a430b2984479cb5d8f291f09a44f3"
+    },
+    {
+      "file": "3c9dec1a3e93c3effb3e.woff2",
+      "url": "https://fonts.gstatic.com/s/roboto/v51/KFO5CnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmkaHkaWzU.woff2",
+      "sha256": "3c9dec1a3e93c3effb3ec8805a71890dc81d0a0c3e64fd95f4d138d8e300aeff"
+    },
+    {
+      "file": "1c6486a3a539bc8cfb0d.woff2",
+      "url": "https://fonts.gstatic.com/s/roboto/v51/KFO5CnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmkenkaWzU.woff2",
+      "sha256": "1c6486a3a539bc8cfb0d9586787438282dfbe21b745fee24b12b376991286215"
+    },
+    {
+      "file": "97fbf7bd0b4579e63239.woff2",
+      "url": "https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3-UBGEe.woff2",
+      "sha256": "97fbf7bd0b4579e632392a4f483acdae73cbf59ad90c1e5d2c5ec4044c377fce"
+    },
+    {
+      "file": "ec7769b0898139962764.woff2",
+      "url": "https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3CUBGEe.woff2",
+      "sha256": "ec7769b089813996276482bbe7017adfffdd6c7543fd1f76244e2ffc1138ed86"
+    },
+    {
+      "file": "01f94d674db55952c358.woff2",
+      "url": "https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3GUBGEe.woff2",
+      "sha256": "01f94d674db55952c35898fa4da22c3e7065c3cc4dbbcc9cb7beb8b6b017fbc9"
+    },
+    {
+      "file": "cedb374b05a35034cf96.woff2",
+      "url": "https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3KUBGEe.woff2",
+      "sha256": "cedb374b05a35034cf96db185db4eeb8f8ce49e1a56197673702ff11b5533d6e"
+    },
+    {
+      "file": "0b60bbe04e9c479444b3.woff2",
+      "url": "https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3OUBGEe.woff2",
+      "sha256": "0b60bbe04e9c479444b31270a72179f53e400beee57b7dd176c08e5e2e716831"
+    },
+    {
+      "file": "481dd0c01e6bbb129fd1.woff2",
+      "url": "https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3iUBGEe.woff2",
+      "sha256": "481dd0c01e6bbb129fd147eb5d8571016193cba141c4627ca60ceabdb5a46ea8"
+    },
+    {
+      "file": "1404ca348bd75ef836f4.woff2",
+      "url": "https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3yUBA.woff2",
+      "sha256": "1404ca348bd75ef836f4dd8b6f2cc719458642d1237c368296b2fc652dca47dc"
+    },
+    {
+      "file": "7cb4281a0ccc84cc1861.woff2",
+      "url": "https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMawCUBGEe.woff2",
+      "sha256": "7cb4281a0ccc84cc18617842c639fc66541cbef94a9dd245c754700210b4fcec"
+    },
+    {
+      "file": "2addf2d86d7a5778653b.woff2",
+      "url": "https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMaxKUBGEe.woff2",
+      "sha256": "2addf2d86d7a5778653b36d551e97a39da52855f82fac7461cfc1bd86d460aed"
+    },
+    {
+      "file": "1dbd6cd2d04f8b494745.woff2",
+      "url": "https://fonts.gstatic.com/s/robotoslab/v36/BngMUXZYTXPIvIBgJJSb6ufA5qW54A.woff2",
+      "sha256": "1dbd6cd2d04f8b494745edb00a5d680647a941ef0a6a92b5dda2f88484e14ea5"
+    },
+    {
+      "file": "427f27a4cad5ee713707.woff2",
+      "url": "https://fonts.gstatic.com/s/robotoslab/v36/BngMUXZYTXPIvIBgJJSb6ufB5qW54A.woff2",
+      "sha256": "427f27a4cad5ee713707e1e39456a2cff8d52eb140be1fcc283431b1b419fcef"
+    },
+    {
+      "file": "6774cefbdbcbb36f47b8.woff2",
+      "url": "https://fonts.gstatic.com/s/robotoslab/v36/BngMUXZYTXPIvIBgJJSb6ufC5qW54A.woff2",
+      "sha256": "6774cefbdbcbb36f47b8a3f0aa51bfbeec1d198e3ddfbaf27f1ecdfad251f43c"
+    },
+    {
+      "file": "8ed24f94c25ecf99a50b.woff2",
+      "url": "https://fonts.gstatic.com/s/robotoslab/v36/BngMUXZYTXPIvIBgJJSb6ufD5qW54A.woff2",
+      "sha256": "8ed24f94c25ecf99a50b806ef6ca02988cf8c1d443228ddbd6a8ac99c99df81e"
+    },
+    {
+      "file": "94ab3efd7d4242d5a603.woff2",
+      "url": "https://fonts.gstatic.com/s/robotoslab/v36/BngMUXZYTXPIvIBgJJSb6ufJ5qW54A.woff2",
+      "sha256": "94ab3efd7d4242d5a6034b2ac62c60ece4ac41d408f74b3b993b897b797e11ed"
+    },
+    {
+      "file": "50cf7d32c18e1001749b.woff2",
+      "url": "https://fonts.gstatic.com/s/robotoslab/v36/BngMUXZYTXPIvIBgJJSb6ufN5qU.woff2",
+      "sha256": "50cf7d32c18e1001749b51f1565ef745bc0687b0297b2b13465ed577cc20a8ff"
+    },
+    {
+      "file": "1f4245774a6de07cf40e.woff2",
+      "url": "https://fonts.gstatic.com/s/robotoslab/v36/BngMUXZYTXPIvIBgJJSb6ufO5qW54A.woff2",
+      "sha256": "1f4245774a6de07cf40e8d9f6b152b994793d1746c333b4434728f6ae1f8a712"
+    },
+    {
+      "file": "roboto-OFL.txt",
+      "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/roboto/OFL.txt",
+      "sha256": "061402327a96aadb0bfb694a960ed289ecd38d383e396243831ab81feb109c41"
+    },
+    {
+      "file": "robotoslab-LICENSE.txt",
+      "url": "https://raw.githubusercontent.com/google/fonts/main/apache/robotoslab/LICENSE.txt",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    }
+  ]
+}

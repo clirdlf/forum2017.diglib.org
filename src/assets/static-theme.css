@@ -69,3 +69,14 @@ a:focus-visible,button:focus-visible{outline:3px solid #006ca3;outline-offset:4p
 .archive-picture{display:contents}
 .hero__images .archive-responsive-hero{display:block!important;object-fit:cover;width:100%;height:100%}
 img[data-archive-intrinsic]:not(.background_image){max-width:100%;height:auto}
+
+/* Override low-contrast historical button colors, including theme !important rules. */
+.site a.btn,.site button.btn{color:#fff!important;background-color:#0067a1!important}
+.site .btn span{color:inherit!important}
+.site a.btn:hover,.site a.btn:focus-visible{color:#fff!important;background-color:#00486f!important}
+.site__content .description a:not(.btn),.site__content .content a:not(.btn){text-decoration:underline}
+.archive-table-scroll{max-width:100%;overflow-x:auto;margin:16px 0}
+.archive-table-scroll:focus-visible{outline:3px solid #0067a1;outline-offset:3px}
+.site__content iframe{max-width:100%}
+.hero .site__title{background-color:#0067a1!important;color:#fff!important}
+#efcb-generic-910 .features__item,#efcb-generic-910 .features__title{color:#fff!important}

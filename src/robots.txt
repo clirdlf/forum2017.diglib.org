@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://forum2017.diglib.org/sitemap.xml

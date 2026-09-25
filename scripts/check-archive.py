@@ -2,6 +2,7 @@
 import argparse
 import json
 import re
+import xml.etree.ElementTree as ET
 from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import unquote, urlsplit
@@ -18,15 +19,32 @@ class Document(HTMLParser):
         self.notice = False
         self.skip = False
         self.issues = []
+        self.h1 = 0
+        self.previous_heading = 0
+        self.description = 0
+        self.link = None
         self.feed(source)
 
     def handle_starttag(self, tag, attrs):
         d = dict(attrs)
         if d.get('id'):
+            if d['id'] in self.ids: self.issues.append('Duplicate ID: ' + d['id'])
             self.ids.add(d['id'])
         if tag == 'a' and d.get('name'):
             self.ids.add(d['name'])
         if tag == 'main': self.main += 1
+        if tag == 'meta' and d.get('name') == 'description' and d.get('content', '').strip(): self.description += 1
+        if re.fullmatch(r'h[1-6]', tag):
+            level = int(tag[1])
+            if level == 1: self.h1 += 1
+            if level > self.previous_heading + 1: self.issues.append('Skipped heading level')
+            self.previous_heading = level
+        if tag == 'iframe' and not d.get('title', '').strip(): self.issues.append('Iframe missing title')
+        if tag == 'th' and not d.get('scope'): self.issues.append('Table header missing scope')
+        if tag == 'a' and d.get('href'):
+            self.link = [d['href'], d.get('aria-label', '') + d.get('title', '')]
+        if tag == 'img' and self.link: self.link[1] += d.get('alt', '')
+        if tag == 'link' and re.search(r'fonts\.(googleapis|gstatic)\.com', d.get('href', '')): self.issues.append('Remote Google Fonts dependency')
         if 'archive-notice' in d.get('class', '').split(): self.notice = True
         if 'skip-link' in d.get('class', '').split() and d.get('href') == '#main': self.skip = True
         if tag == 'img' and 'alt' not in d: self.issues.append('Image missing alt')
@@ -41,6 +59,14 @@ class Document(HTMLParser):
                 self.urls.extend(part.strip().split()[0] for part in value.split(',') if part.strip())
             if key == 'style': self.urls.extend(CSS_URL.findall(value))
 
+    def handle_data(self, value):
+        if self.link: self.link[1] += value
+
+    def handle_endtag(self, tag):
+        if tag == 'a' and self.link:
+            if not self.link[1].strip(): self.issues.append('Link missing accessible name: ' + self.link[0])
+            self.link = None
+
 
 def audit(site, expected):
     site = site.resolve()
@@ -53,6 +79,8 @@ def audit(site, expected):
 
     def reference(url, source):
         parsed = urlsplit(url)
+        if parsed.hostname in ('fonts.googleapis.com', 'fonts.gstatic.com'):
+            issues.setdefault(str(source.relative_to(site)), []).append('Remote Google Fonts dependency')
         if parsed.scheme or parsed.netloc: return
         path = unquote(parsed.path)
         target = (site / path.lstrip('/')) if path.startswith('/') else (source.parent / path if path else source)
@@ -73,6 +101,8 @@ def audit(site, expected):
 
     for page, doc in pages.items():
         for url in doc.urls: reference(url, page)
+        if doc.h1 != 1: doc.issues.append('Expected exactly one h1')
+        if doc.description != 1: doc.issues.append('Expected one page description')
         if doc.main != 1: doc.issues.append('Expected exactly one main element')
         if not doc.notice: doc.issues.append('Missing archive notice')
         if not doc.skip: doc.issues.append('Missing skip link')
@@ -86,6 +116,20 @@ def audit(site, expected):
         actual_ids = {value for value in schedule_page.ids if value.startswith('session-')} if schedule_page else set()
         if expected_ids != actual_ids:
             issues.setdefault('schedule/index.html', []).append('Preserved schedule sessions are missing or unexpected')
+    if '/news/' in expected:
+        source_pages = json.loads((ROOT / 'src/_data/wordpress.json').read_text())['pages']
+        news = pages.get(site / 'news/index.html')
+        for post in (p for p in source_pages if p['type'] == 'post'):
+            if news is None or post['url'] not in news.urls:
+                issues.setdefault('news/index.html', []).append('Missing post: ' + post['url'])
+        try:
+            sitemap = ET.parse(site / 'sitemap.xml')
+            locations = [node.text for node in sitemap.findall('.//{http://www.sitemaps.org/schemas/sitemap/0.9}loc')]
+            expected_locations = {'https://forum2017.diglib.org' + p['url'] for p in source_pages}
+            if set(locations) != expected_locations or len(locations) != len(expected_locations):
+                issues.setdefault('sitemap.xml', []).append('Sitemap does not match preserved routes')
+        except (OSError, ET.ParseError):
+            issues.setdefault('sitemap.xml', []).append('Missing or invalid sitemap')
     actual = {'/' + str(p.relative_to(site)).removesuffix('index.html') for p in pages}
     return {
         'pageCount': len(pages),

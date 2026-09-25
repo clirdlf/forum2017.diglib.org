@@ -13,7 +13,7 @@ spec = importlib.util.spec_from_file_location('audit', ROOT / 'scripts/check-arc
 checker = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(checker)
 
-PAGE = '<html><body><aside class="archive-notice">Archive</aside><a class="skip-link" href="#main">Skip</a><main id="main">{}</main></body></html>'
+PAGE = '<html><head><meta name="description" content="Fixture page"></head><body><aside class="archive-notice">Archive</aside><a class="skip-link" href="#main">Skip</a><main id="main"><h1>Fixture</h1>{}</main></body></html>'
 
 class ArchiveTests(unittest.TestCase):
     def test_nested_suppression_preserves_following_content(self):

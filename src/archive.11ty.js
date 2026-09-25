@@ -1,3 +1,4 @@
+import {newsIndex} from '../lib/pages.js';
 import {replaceScheduleEmbed} from '../lib/schedule.js';
 import {readFileSync} from 'node:fs';
 const archiveNotice = readFileSync(new URL('./_includes/archive-notice.html', import.meta.url), 'utf8');
@@ -13,7 +14,11 @@ export default class {
     return {pagination: {data: 'wordpress.pages', size: 1, alias: 'entry'}, permalink: data => data.entry.url};
   }
   render({entry, wordpress, schedule}) {
-    if (entry.rendered) return replaceScheduleEmbed(entry.rendered, entry, schedule);
+    if (entry.rendered) {
+      let html = replaceScheduleEmbed(entry.rendered, entry, schedule);
+      if (entry.url === '/news/') html = html.replace(/(<main\b[^>]*>)[\s\S]*?(<\/main>)/, (_, open, close) => open + newsIndex(wordpress.pages) + close);
+      return html;
+    }
     const home = entry.url === '/';
     return `<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">

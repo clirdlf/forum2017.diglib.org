@@ -1,6 +1,6 @@
 # DLF Forum 2017 static archive
 
-Eleventy publishes 124 original public URLs. 121 use captured, rendered WordPress HTML and the original Fudge 2 theme assets, including the live site's generated color/font CSS. Cart, checkout, and account routes retain static archival messages.
+Eleventy publishes 124 original public URLs, plus a custom `/404.html`, `/sitemap.xml`, and `/robots.txt`. 121 use captured, rendered WordPress HTML and the original Fudge 2 theme assets, including the live site's generated color/font CSS. Cart, checkout, and account routes retain static archival messages.
 
 ## Build and preview
 
@@ -32,7 +32,7 @@ Generated output is stored in `src/_data/wordpress.json`. Do not edit it directl
 
 - Removed both accessibility plugins' assets, toolbar markup, and styles. Captured pages receive a main landmark, skip link, labeled navigation/social links, and alternatives for decorative images.
 - Removed analytics, WordPress/plugin runtime scripts, forms, and unused API-discovery links. Small local JavaScript handles the responsive navigation; the header stays in normal document flow below the archive notice.
-- Replaced Sched embeds at build time with a local schedule on `/schedule/` and day links on other pages. Session content no longer requires Sched or JavaScript. Google Fonts remain an external dependency.
+- Replaced Sched embeds at build time with a local schedule on `/schedule/` and day links on other pages. Session content no longer requires Sched or JavaScript. Roboto and Roboto Slab are self-hosted in `src/assets/fonts/`; published pages make no Google Fonts requests.
 - Decoded public Cloudflare email-protection links locally.
 - Preserved local upload paths and corrected malformed internal Twitter/IMLS and visitor-guide links.
 - A shared archive notice identifies historical deadlines and closed event services on every route.
@@ -60,9 +60,19 @@ Every build transforms local upload images through `lib/images.js`. Responsive W
 
 Hero images load eagerly with high priority. Other images receive asynchronous decoding and missing intrinsic dimensions; below-the-fold images load lazily. The first content image is kept eager as a conservative layout heuristic. The homepage's three identical device-specific hero images become one responsive image.
 
-Generated images have content-hashed filenames under `_site/assets/optimized/`. That generated directory is refreshed for each build; encoded images are reused from ignored `.cache/images/`. The first build performs encoding, and subsequent builds reuse the cache. Builds require no external image services. `data/asset-report.json` inventories referenced originals, variant sizes, lazy-loading counts, and estimated file-size savings; its totals are not measured network transfer sizes.
+Generated images have content-hashed filenames under `_site/assets/optimized/`. Encoded images are reused from ignored `.cache/images/`. Builds retain older content-hashed variants so concurrent previews do not lose assets; clean `_site` when preparing a fresh deployment. The first build performs encoding, and subsequent builds reuse the cache. Builds require no external image services. `data/asset-report.json` inventories referenced originals, variant sizes, lazy-loading counts, and estimated file-size savings; its totals are not measured network transfer sizes.
 
 On the eventual production host, serve `/assets/optimized/` with `Cache-Control: public, max-age=31536000, immutable` and enable Brotli/gzip for HTML, CSS, JavaScript, and JSON. Keep HTML revalidating so it points to new image hashes after updates. These are hosting settings, not enabled by Eleventy itself. Original uploads remain in the deployment for preservation; this work reduces browser transfers rather than the size of that archival collection.
+
+## Discovery and accessibility
+
+`/news/` lists all 16 preserved posts in reverse chronological order, including older entries from the original export. `lib/pages.js` generates excerpts, page descriptions, clean document titles, local font references, and accessibility corrections at build time; raw WordPress captures stay unchanged. The shared archive notice links to the news index.
+
+`/sitemap.xml` lists the 124 original canonical URLs and omits the 404 page. It deliberately does not invent last-modified dates. `/robots.txt` advertises the sitemap. `/404.html` has recovery links and `noindex`; configure the production host to serve this file **with HTTP status 404** for unknown paths. Opening the file directly returns a normal page and is not a test of hosting error behavior.
+
+The self-hosted fonts retain the requested regular, medium, bold, and italic Roboto styles and regular/bold Roboto Slab, with Unicode subsets and `font-display: swap`. `src/assets/fonts/provenance.json` records source URLs, capture time, and checksums. The directory includes the upstream Roboto OFL and Roboto Slab Apache license texts. Builds and visitors do not need Google Fonts; keep the license files when redistributing the font bundle.
+
+See [the accessibility review](docs/accessibility-review.md) for findings, fixes, verification, and remaining limits. Automated checks now enforce headings, link names, unique IDs, iframe titles, table scopes, descriptions, news-index coverage, and sitemap completeness in addition to the previous archive checks.
 
 ## Validation
 
